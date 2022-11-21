@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald:wght@500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Oswald:wght@400&display=swap";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,12 +41,6 @@ p {
   display: flex;
 }
 
-.cuerpo__menu {
-  color: #101122;
-  margin-right: 1rem;
-  font-size: 3rem;
-}
-
 .encabezado__lista li {
   margin: 8rem;
   list-style: none;
@@ -55,17 +49,19 @@ p {
 
 .cuerpo {
   height: 84vh;
+  background: url("fondo3.7375686f.png") 0 0 / 100% 100% no-repeat;
 }
 
-.cuerpo:before {
-  background: url("fondo.3c2481ea.jpg") 0 0 / 100% 100% no-repeat;
+.cuerpo__menu {
+  color: #101122;
+  margin-right: 1rem;
+  font-size: 3rem;
 }
 
 .cuerpo__logo {
   width: 10rem;
-  border-radius: 50%;
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 2.5rem;
   display: block;
 }
 
@@ -82,28 +78,36 @@ p {
   color: #153359;
   font-family: Oswald, sans-serif;
   font-size: 2.75rem;
+  font-weight: normal;
   display: block;
 }
 
 .cuerpo__buscador {
   text-align: center;
-  border-radius: 5px;
   justify-content: center;
   padding-top: 1rem;
   display: flex;
 }
 
 .cuerpo__buscador__caja {
-  height: 3.2rem;
+  height: 3.3rem;
   width: 40rem;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   padding-left: 1em;
+  font-size: 18px;
 }
 
 .cuerpo__buscador__boton {
-  height: 3.2rem;
+  height: 3.3rem;
+  width: 3.3rem;
   background-color: #0e6dcf;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.cuerpo__buscador__boton__imagen {
+  width: 2.2rem;
 }
 
 .cuerpo__tipo, .cuerpo__generaciones, .cuerpo__movimientos {
@@ -113,22 +117,28 @@ p {
 .pie {
   height: 8vh;
   background-color: #0e6dcf;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
-  display: flex;
+  display: grid;
 }
 
-.pie section {
-  width: 33%;
+.pie__seccion {
+  width: 100%;
 }
 
-.pie__redes {
-  justify-content: space-evenly;
-  display: flex;
+.pie__seccion__redes {
+  height: 2.75rem;
 }
 
-.pie #instagram {
+.pie__seccion--redes li {
+  padding-right: 2rem;
+  list-style: none;
+  display: inline;
+}
+
+.pie__seccion__redes--instagram {
   border-radius: 50%;
 }
 
