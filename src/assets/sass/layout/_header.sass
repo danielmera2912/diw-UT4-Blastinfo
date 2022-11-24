@@ -1,0 +1,52 @@
+.encabezado
+    height: 8vh
+    padding : 1rem
+    background-color : $color_primario
+    // width : 100%
+    display : flex
+    
+    justify-content : space-evenly
+    
+    align-items : center
+    
+    &__lista li
+        
+        list-style : none
+        display : inline
+        margin : 4.5rem
+        
+    &__lista__enlace
+        color : $color_claro
+        padding : 0.5rem 1.5rem 0.5rem 1.5rem
+        border-radius : 5px
+    &__lista__enlace:hover
+        background-color : $color_secundario_oscuro
+    &__lista__enlace--actual
+        color : $color_secundario_claro
+    &__lista__logo
+        height: $xl
+    &__lista__buscador
+        display : flex
+        justify-content : center
+        text-align : center
+        padding-top : 1rem
+        &__caja
+            padding-left : 1em
+            height : 2.3rem
+            width :10rem
+            // width: 80%
+            border-top-left-radius : 5px
+            border-bottom-left-radius : 5px
+            font-size : $xs
+            outline : none
+        &__boton
+            background-color : $color_primario
+            height : 2.3rem
+            width : 3.3rem
+            border-top-right-radius : 5px
+            border-bottom-right-radius : 5px
+            // border-color : $color_primario
+            &__imagen
+                width : 1.7rem
+        &__boton:hover
+            background-color : $color_secundario_oscuro
