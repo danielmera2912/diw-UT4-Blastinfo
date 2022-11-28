@@ -8,41 +8,42 @@
     <link rel="stylesheet" href="assets/sass/base/_reset.sass">
     <link rel="stylesheet" href="assets/sass/main.sass">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+    <script src="iniciar.js"></script>
 </head>
 <body>
     <header class="encabezado encabezado--portada">
+        <a href="index.html">
+            <img class="encabezado__lista__logo" src="assets/images/logo.svg">
+        </a>
         <nav>
             <ul class="encabezado__lista">
-                <li><a href="index.html" class="encabezado__lista__enlace">
-                    <img class="encabezado__lista__logo" src="assets/images/logo.svg"></a>
-                </li>
+                
+                
                 <li><a href="#" class="encabezado__lista__enlace encabezado__lista__enlace--actual">Pokémon</a></li>
                 <li><a href="#" class="encabezado__lista__enlace">Movimientos</a></li>
                 <li><a href="#" class="encabezado__lista__enlace">Habilidades</a></li>
-                <li>
-                    <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
-                        <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
-                        <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
-                    </form>
-                </li>
+                
                 <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
             </ul>
         </nav>
-        
+            <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
+                <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
+                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
+            </form>
         
     </header>
     <main class="cuerpo">
 
         <form class="cuerpo__filtro" action="https://www.wikidex.net/wiki/Blastoise">
-            <button class="cuerpo__filtro__boton1">Filtro</button>
-            <input class="cuerpo__filtro__caja" type="text" placeholder="Buscar..."> 
-            <button class="cuerpo__filtro__boton2"><img class="cuerpo__filtro__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
+            <button class="cuerpo__filtro__boton cuerpo__filtro__boton--filtro">Filtro</button>
+            <input class="cuerpo__filtro__caja" type="text" placeholder="Ejemplo..."> 
+            <button class="cuerpo__filtro__boton cuerpo__filtro__boton--buscador"><img class="cuerpo__filtro__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
         </form>
         <section class="cuerpo__listado">
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/bulbasaurfront.svg"/>
-                    <img src="assets/images/Sprites/bulbasaurback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/bulbasaurfront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/bulbasaurback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Bulbasaur
@@ -51,8 +52,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/ivysaurfront.svg"/>
-                    <img src="assets/images/Sprites/ivysaurback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/ivysaurfront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/ivysaurback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Ivysaur
@@ -61,8 +62,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/venusaurfront.svg"/>
-                    <img src="assets/images/Sprites/venusaurback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/venusaurfront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/venusaurback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Venusaur
@@ -71,8 +72,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/squirtlefront.svg"/>
-                    <img src="assets/images/Sprites/squirtleback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/squirtlefront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/squirtleback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Squirtle
@@ -81,8 +82,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/wartortlefront.svg"/>
-                    <img src="assets/images/Sprites/wartortleback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/wartortlefront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/wartortleback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Wartortle
@@ -91,8 +92,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/blastoisefront.svg"/>
-                    <img src="assets/images/Sprites/blastoiseback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/blastoisefront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/blastoiseback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Blastoise
@@ -101,8 +102,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/charmanderfront.svg"/>
-                    <img src="assets/images/Sprites/charmanderback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/charmanderfront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/charmanderback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Charmander
@@ -111,8 +112,8 @@
 
             <article class="cuerpo__listado__items">
                 <div class="cuerpo__listado__items__imagenes">
-                    <img src="assets/images/Sprites/dittofront.svg"/>
-                    <img src="assets/images/Sprites/dittoback.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/dittofront.svg"/>
+                    <img class="cuerpo__listado__items__imagenes__imagen" src="assets/images/Sprites/dittoback.svg"/>
                 </div>
                 <div class="cuerpo__listado__items__texto">
                     Ditto
@@ -123,11 +124,11 @@
         </section>
 
         <nav class="cuerpo__paginado">
-            <button class="cuerpo__paginado__atras"> < </button>
-            <button class="cuerpo__paginado__numeroAnterior"> 1 </button>
-            <button class="cuerpo__paginado__numeroActual"> 2 </button>
-            <button class="cuerpo__paginado__numeroPosterior"> 3 </button>
-            <button class="cuerpo__paginado__siguiente"> > </button>
+            <button class="cuerpo__paginado__boton"> < </button>
+            <button class="cuerpo__paginado__boton"> 1 </button>
+            <button class="cuerpo__paginado__boton cuerpo__paginado__boton--actual"> 2 </button>
+            <button class="cuerpo__paginado__boton"> 3 </button>
+            <button class="cuerpo__paginado__boton"> > </button>
         </nav>
         <!-- <img class="cuerpo__fondo" src="assets/images/fondo.jpg"> -->
         <!-- <img src="assets/images/Generaciones/cuarta_generacion.pn  g"/>
@@ -153,13 +154,18 @@
             <img class="pie__redes__elementos pie__redes__elementos--instagram" src="assets/images/Redes/instagram-48.png"> -->
 
         <section class="pie__acceder">
-            <p class="leader"> <a href="#" class="pie__acceder__enlace">Acceder/Crear Cuenta</a></p>
+            <p class="leader"> <a href="#" class="pie__acceder__enlace">
+                <button id="open">
+                    Hacer Click
+                  </button>	
+                <a id="cerrar" href="#popup">Acceder/Crear Cuenta</a></p>
         </section>
         <section class="pie__contacto">
             <p class="leader"> <a href="#" class="pie__contacto__enlace">Contacto</a></p>
         </section>
     </footer>
 </body>
+
 </html>
  <!-- npm run start -->
  <!-- npx parcel src/index.html -->

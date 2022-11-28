@@ -1,25 +1,46 @@
 @import 'utilities/variables'
 @import 'layout/header'
+@import 'layout/footer'
 @import 'base/reset'
+@import 'components/iniciarsession'
 
 .cuerpo__listado 
     // display: grid
     // grid-template-columns: 100px 100px 100px 100px
     // grid-template-row: 100px 100px
     // grid-gap: 225px
-    justify-content: center
-    align-items: center
-    display: grid
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(2, 1fr)
-    grid-gap: 10px
-    width: 100vw
-    height: 70vh
-    
-    &__items__imagenes
-        display: flex
-    &__items__texto
-        text-align: center
+    padding : 1rem
+    justify-content : center
+    align-items : center
+    display : grid
+    grid-template-columns : repeat(4, 1fr)
+    grid-template-rows : repeat(2, 1fr)
+    grid-gap : 10px
+    width : 100vw
+    height : 60vh
+    @media (max-width: 1400px)
+        grid-template-columns : repeat(3, 1fr)
+        
+    &__items
+        display : flex
+        flex-direction: column
+        &__imagenes
+            align-self : center
+            display: flex
+            &__imagen
+                padding : 1.5rem
+                background-color : $color_secundario_claro
+                border : 1px solid $color_oscuro
+                @media (max-width: 1700px)
+                    padding: 0.5rem
+                @media (max-width: 1200px)
+                    padding: 0.2rem
+        &__texto
+            width : 100%
+            text-align: center
+            font-size : $s
+            font-family : $fuente_inter
+            color : $color_oscuro
 
 h3
     color : $color_primario
@@ -117,6 +138,54 @@ p
     // z-index : -99
     // heigh : 100%
     // width : 100%
+.cuerpo__filtro
+    display : flex
+    justify-content : center
+    align-items : center
+    padding-top: 3.2rem
+    &__caja
+        padding-left : 1em
+        height : 3.3rem
+        width :20rem
+        // width: 80%
+        // border-top-left-radius : 5px
+        // border-bottom-left-radius : 5px
+        font-size : $xs
+        outline : none
+    &__boton
+        background-color : $color_primario
+        height : 3.3rem
+        width : 3.3rem
+        
+        &__imagen
+            width : 2.7rem
+.cuerpo__filtro__boton--filtro
+    color : $color_claro
+    font-size : $s
+    font-family : $fuente_inter
+    width : 5.3rem
+    border-top-left-radius : 5px
+    border-bottom-left-radius : 5px
+.cuerpo__filtro__boton--buscador
+    border-top-right-radius : 5px
+    border-bottom-right-radius : 5px
+
+.cuerpo__paginado
+    display : flex
+    justify-content : center
+    &__boton
+        border : none
+        margin-right : 1rem
+        background-color : $color_primario
+        height : 3.3rem
+        width : 3.3rem
+        border-top-right-radius : 5px
+        border-bottom-right-radius : 5px
+        color : $color_claro
+        font-size : $s
+        font-family : $fuente_inter
+.cuerpo__paginado__boton--actual
+    opacity : 25%
 .cuerpo__tipo
     width: $xxl
 
@@ -130,44 +199,3 @@ p
 
 
 
-.pie
-    padding : 0px 2em 0 2em
-    height : 8vh
-    background-color : $color_primario
-    display : grid
-    grid-template-columns : repeat(3, 1fr)
-    justify-content : space-between
-    align-items : center
-    &__seccion
-        width : 100%
-        &__redes
-            height: $xl
-        &__redes img:hover
-            box-shadow: 0px 0px 9px 9px $color_secundario_oscuro
-    &__seccion--redes li
-        padding-right : 2rem
-        list-style : none
-        display : inline
-        
-       
-    &__seccion__redes img
-        border-radius: 50%
-
-    &__acceder
-        text-align : center
-        &__enlace
-            color : $color_claro
-            padding : 0.5rem 1.5rem 0.5rem 1.5rem
-            border-radius : 5px
-        &__enlace:hover
-            background-color : $color_secundario_oscuro
-
-    &__contacto
-        // padding-right : 12rem
-        text-align : right
-        &__enlace
-            color : $color_claro
-            padding : 0.5rem 1.5rem 0.5rem 1.5rem
-            border-radius : 5px
-        &__enlace:hover
-            background-color : $color_secundario_oscuro
