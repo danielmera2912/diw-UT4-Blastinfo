@@ -3,6 +3,9 @@
 @import 'layout/footer'
 @import 'base/reset'
 @import 'components/iniciarsession'
+@import 'components/registrar'
+@import 'components/accesoperfil'
+@import 'utilities/extends'
 
 .cuerpo__listado 
     // display: grid
@@ -122,6 +125,7 @@ p
             width : 3.3rem
             border-top-right-radius : 5px
             border-bottom-right-radius : 5px
+            cursor : pointer
             // border-color : $color_primario
             &__imagen
                 width : 2.2rem
@@ -156,16 +160,21 @@ p
         background-color : $color_primario
         height : 3.3rem
         width : 3.3rem
-        
+        cursor : pointer
         &__imagen
-            width : 2.7rem
+            width : 1.7rem
 .cuerpo__filtro__boton--filtro
+    border : 1px solid black
     color : $color_claro
     font-size : $s
     font-family : $fuente_inter
-    width : 5.3rem
+    width : 8.5rem
     border-top-left-radius : 5px
     border-bottom-left-radius : 5px
+    display : flex
+    align-items: center
+    justify-content: center
+   
 .cuerpo__filtro__boton--buscador
     border-top-right-radius : 5px
     border-bottom-right-radius : 5px
@@ -174,16 +183,7 @@ p
     display : flex
     justify-content : center
     &__boton
-        border : none
-        margin-right : 1rem
-        background-color : $color_primario
-        height : 3.3rem
-        width : 3.3rem
-        border-top-right-radius : 5px
-        border-bottom-right-radius : 5px
-        color : $color_claro
-        font-size : $s
-        font-family : $fuente_inter
+        @extend %boton
 .cuerpo__paginado__boton--actual
     opacity : 25%
 .cuerpo__tipo

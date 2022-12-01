@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
     <link rel="stylesheet" href="/index.ad85b7e3.css">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    <script src="/buscador_pokemon.13f4442b.js"></script>
+    
 </head>
 <body>
     <header class="encabezado encabezado--portada">
@@ -17,8 +17,6 @@
         </a>
         <nav>
             <ul class="encabezado__lista">
-                
-                
                 <li><a href="#" class="encabezado__lista__enlace encabezado__lista__enlace--actual">Pokémon</a></li>
                 <li><a href="#" class="encabezado__lista__enlace">Movimientos</a></li>
                 <li><a href="#" class="encabezado__lista__enlace">Habilidades</a></li>
@@ -33,9 +31,11 @@
         
     </header>
     <main class="cuerpo">
-
-        <form class="cuerpo__filtro" action="https://www.wikidex.net/wiki/Blastoise">
-            <button class="cuerpo__filtro__boton cuerpo__filtro__boton--filtro">Filtro</button>
+        
+        <form class="cuerpo__filtro" action="https://www.wikidex.net/wiki/Blastoise"> 
+            <a href="#" class="cuerpo__filtro__boton cuerpo__filtro__boton--filtro">
+                <span class="cuerpo__filtro__eleccion">Filtro</span>
+            </a>
             <input class="cuerpo__filtro__caja" type="text" placeholder="Ejemplo..."> 
             <button class="cuerpo__filtro__boton cuerpo__filtro__boton--buscador"><img class="cuerpo__filtro__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
         </form>
@@ -154,16 +154,59 @@
             <img class="pie__redes__elementos pie__redes__elementos--instagram" src="assets/images/Redes/instagram-48.png"> -->
 
         <section class="pie__acceder">
-            <p class="leader"> <a href="#" class="pie__acceder__enlace">
-                <button id="open">
+                <!-- <button id="open">
                     Hacer Click
                   </button>	
-                <a id="cerrar" href="#popup">Acceder/Crear Cuenta</a></a></p>
+                <a id="cerrar" href="#popup">Acceder/Crear Cuenta</a></p> -->
+                <p class="leader"> <a href="#" class="pie__acceder__enlace">Acceder/Crear Cuenta</a></p>
         </section>
         <section class="pie__contacto">
             <p class="leader"> <a href="#" class="pie__contacto__enlace">Contacto</a></p>
         </section>
     </footer>
+    <div class="fondo"></div>
+
+    <div class="perfil">
+        <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
+        <tittle class="perfil__titulo">Perfil</tittle>
+        <section class="perfil__avatar">
+            <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
+        </section>
+        <section class="perfil__boton">
+            <button class="perfil__boton__opcion">Acceder al perfil</button>
+        </section>
+    </div>
+
+    <form class="iniciar_sesion">
+        <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
+        <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
+        <section class="iniciar_sesion__caja">
+            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
+            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
+        </section>
+        <section class="iniciar_sesion__boton">
+            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
+            <p>o</p>
+            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
+        </section>
+    </form>
+
+    <form class="registrar">
+        <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
+        <tittle class="registrar__titulo">Registrar</tittle>
+        <section class="registrar__caja">
+            <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
+            <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
+            <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
+        </section>
+        <section class="registrar__boton">
+            <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
+            <p>o</p>
+            <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
+        </section>
+    </form>
+    <script src="/buscador_pokemon.394f930b.js"></script>
+    <script src="/buscador_pokemon.a8b2b454.js"></script>
 <script src="/buscador_pokemon.f832b993.js"></script></body>
 
 </html>
