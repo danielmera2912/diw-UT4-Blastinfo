@@ -7,32 +7,40 @@
     <title>Blastinfo</title>
     <link rel="stylesheet" href="/index.ad85b7e3.css">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header class="encabezado encabezado--portada">
+        <a href="/index.html">
+            <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
+        </a>
         <nav>
             <ul class="encabezado__lista">
                 <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
-                <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
-                <li><a href="/buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
+                <li><a href="#" class="encabezado__lista__enlace">Movimientos</a></li>
+                <li><a href="#" class="encabezado__lista__enlace">Habilidades</a></li>
+                
+                <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
             </ul>
         </nav>
+            <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
+                <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
+                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
+            </form>
         
     </header>
-    <main class="cuerpo cuerpo--fondo">
-
-        <img class="cuerpo__logo" src="/logo.5b34b4d1.svg">
-        <h1 class="cuerpo__titulo">Blastinfo</h1>
-        <h2 class="cuerpo__subtitulo">Busca a tus Pokémon favoritos</h2>
-        <form class="cuerpo__buscador" action="https://www.wikidex.net/wiki/Blastoise">
-            <input class="cuerpo__buscador__caja" type="text" placeholder="Buscar..."> 
-            <button class="cuerpo__buscador__boton"><img class="cuerpo__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
-        </form>
+    <form class="cuerpo cuerpo--contacto">
         
-        <!-- <img class="cuerpo__fondo" src="assets/images/fondo.jpg"> -->
-        <!-- <img src="assets/images/Generaciones/cuarta_generacion.png"/>
-        <img class="principal__tipo" src="assets/images/Tipos/Acero_Pokemon.svg"/> -->
-    </main>
+        <section class="cuerpo--contacto__titulo">
+            Contacto
+        </section>
+       <section class="cuerpo--contacto__datos">
+            <input class="cuerpo--contacto__datos__nombre" type="text" placeholder="Nombre..."> 
+            <input class="cuerpo--contacto__datos__correo" type="text" placeholder="Correo electrónico..."> 
+            <textarea class="cuerpo--contacto__datos__descripcion"></textarea>
+       </section>
+        <button class="cuerpo cuerpo--contacto__enviar">Enviar</button>
+        </form>
     <footer class="pie">
 
             <ul class="pie__seccion pie__seccion--redes">
@@ -53,7 +61,11 @@
             <img class="pie__redes__elementos pie__redes__elementos--instagram" src="assets/images/Redes/instagram-48.png"> -->
 
         <section class="pie__acceder">
-            <p class="leader"> <a href="#" class="pie__acceder__enlace">Acceder/Crear Cuenta</a></p>
+                <!-- <button id="open">
+                    Hacer Click
+                  </button>	
+                <a id="cerrar" href="#popup">Acceder/Crear Cuenta</a></p> -->
+                <p class="leader"> <a href="#" class="pie__acceder__enlace">Acceder/Crear Cuenta</a></p>
         </section>
         <section class="pie__contacto">
             <p class="leader"> <a href="#" class="pie__contacto__enlace">Contacto</a></p>
@@ -67,9 +79,9 @@
         <section class="perfil__avatar">
             <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
         </section>
-        <section class="perfil__boton">
+        <form class="perfil__boton">
             <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
-        </section>
+        </form>
     </div>
 
     <form class="iniciar_sesion">
@@ -102,7 +114,8 @@
     </form>
     <script src="/contacto.394f930b.js"></script>
     <script src="/contacto.a8b2b454.js"></script>
-<script src="/Blastinfo.59712999.js"></script></body>
+<script src="/contacto.7ee82020.js"></script></body>
+
 </html>
  <!-- npm run start -->
  <!-- npx parcel src/index.html -->

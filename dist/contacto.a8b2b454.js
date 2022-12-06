@@ -13,4 +13,4 @@ function cambiar() {
     else num = 0;
 }
 
-//# sourceMappingURL=buscador_pokemon.a8b2b454.js.map
+//# sourceMappingURL=contacto.a8b2b454.js.map

@@ -5,46 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blastinfo</title>
-    <link rel="stylesheet" href="/index.ad85b7e3.css">
+    <link rel="stylesheet" href="assets/sass/main.sass">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header class="encabezado encabezado--portada">
+        <a href="index.html">
+            <img class="encabezado__lista__logo" src="assets/images/logo.svg">
+        </a>
         <nav>
             <ul class="encabezado__lista">
-                <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
-                <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
-                <li><a href="/buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
+                <li><a href="buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
+                <li><a href="#" class="encabezado__lista__enlace">Movimientos</a></li>
+                <li><a href="#" class="encabezado__lista__enlace">Habilidades</a></li>
+                
+                <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
             </ul>
         </nav>
+            <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
+                <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
+                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
+            </form>
         
     </header>
-    <main class="cuerpo cuerpo--fondo">
-
-        <img class="cuerpo__logo" src="/logo.5b34b4d1.svg">
-        <h1 class="cuerpo__titulo">Blastinfo</h1>
-        <h2 class="cuerpo__subtitulo">Busca a tus Pokémon favoritos</h2>
-        <form class="cuerpo__buscador" action="https://www.wikidex.net/wiki/Blastoise">
-            <input class="cuerpo__buscador__caja" type="text" placeholder="Buscar..."> 
-            <button class="cuerpo__buscador__boton"><img class="cuerpo__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
-        </form>
+    <form class="cuerpo cuerpo--contacto">
         
-        <!-- <img class="cuerpo__fondo" src="assets/images/fondo.jpg"> -->
-        <!-- <img src="assets/images/Generaciones/cuarta_generacion.png"/>
-        <img class="principal__tipo" src="assets/images/Tipos/Acero_Pokemon.svg"/> -->
-    </main>
+        <section class="cuerpo--contacto__titulo">
+            Contacto
+        </section>
+       <section class="cuerpo--contacto__datos">
+            <input class="cuerpo--contacto__datos__nombre" type="text" placeholder="Nombre..."> 
+            <input class="cuerpo--contacto__datos__correo" type="text" placeholder="Correo electrónico..."> 
+            <textarea class="cuerpo--contacto__datos__descripcion"></textarea>
+       </section>
+        <button class="cuerpo cuerpo--contacto__enviar">Enviar</button>
+        </form>
     <footer class="pie">
 
             <ul class="pie__seccion pie__seccion--redes">
                 <li>
-                    <a class="pie__seccion__redes" href="#"><img src="/twitter-5-48.6409059b.png"></a>
+                    <a class="pie__seccion__redes" href="#"><img  src="assets/images/Redes/twitter-5-48.png"></a>
                 </li>
                 <li>
-                    <a class="pie__seccion__redes" href="#"><img src="/facebook-5-48.40778b44.png"></a>
+                    <a class="pie__seccion__redes" href="#"><img src="assets/images/Redes/facebook-5-48.png"></a>
                     
                 </li>
                 <li>
-                    <a class="pie__seccion__redes" href="#"><img src="/instagram-48.87322e41.png"></a>
+                    <a class="pie__seccion__redes" href="#"><img src="assets/images/Redes/instagram-48.png"></a>
                     
                 </li>
             </ul>
@@ -53,7 +61,11 @@
             <img class="pie__redes__elementos pie__redes__elementos--instagram" src="assets/images/Redes/instagram-48.png"> -->
 
         <section class="pie__acceder">
-            <p class="leader"> <a href="#" class="pie__acceder__enlace">Acceder/Crear Cuenta</a></p>
+                <!-- <button id="open">
+                    Hacer Click
+                  </button>	
+                <a id="cerrar" href="#popup">Acceder/Crear Cuenta</a></p> -->
+                <p class="leader"> <a href="#" class="pie__acceder__enlace">Acceder/Crear Cuenta</a></p>
         </section>
         <section class="pie__contacto">
             <p class="leader"> <a href="#" class="pie__contacto__enlace">Contacto</a></p>
@@ -62,18 +74,18 @@
     <div class="fondo"></div>
 
     <div class="perfil">
-        <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
+        <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="perfil__titulo">Perfil</tittle>
         <section class="perfil__avatar">
-            <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
+            <img class="perfil__avatar__imagen" src="assets/images/icons/avatar.png"></a>
         </section>
-        <section class="perfil__boton">
-            <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
-        </section>
+        <form class="perfil__boton">
+            <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
+        </form>
     </div>
 
     <form class="iniciar_sesion">
-        <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
+        <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
         <section class="iniciar_sesion__caja">
             <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
@@ -87,7 +99,7 @@
     </form>
 
     <form class="registrar">
-        <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
+        <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="registrar__titulo">Registrar</tittle>
         <section class="registrar__caja">
             <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
@@ -100,9 +112,10 @@
             <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
         </section>
     </form>
-    <script src="/contacto.394f930b.js"></script>
-    <script src="/contacto.a8b2b454.js"></script>
-<script src="/Blastinfo.59712999.js"></script></body>
+    <script src="assets/js/iniciar.js"></script>
+    <script src="assets/js/filtro.js"></script>
+</body>
+
 </html>
  <!-- npm run start -->
  <!-- npx parcel src/index.html -->

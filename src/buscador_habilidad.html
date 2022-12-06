@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blastinfo</title>
-    <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
-    <link rel="stylesheet" href="/index.ad85b7e3.css">
+    <link rel="stylesheet" href="assets/sass/base/_reset.sass">
+    <link rel="stylesheet" href="assets/sass/main.sass">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <header class="encabezado encabezado--portada">
-        <a href="/index.html">
-            <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
+        <a href="index.html">
+            <img class="encabezado__lista__logo" src="assets/images/logo.svg">
         </a>
         <nav>
             <ul class="encabezado__lista">
-                <li><a href="#" class="encabezado__lista__enlace encabezado__lista__enlace--actual">Pokémon</a></li>
+                <li><a href="#" class="encabezado__lista__enlace">Pokémon</a></li>
                 <li><a href="#" class="encabezado__lista__enlace">Movimientos</a></li>
-                <li><a href="#" class="encabezado__lista__enlace">Habilidades</a></li>
+                <li><a href="#" class="encabezado__lista__enlace encabezado__lista__enlace--actual">Habilidades</a></li>
                 
                 <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
             </ul>
         </nav>
             <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
                 <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
-                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
+                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
             </form>
         
     </header>
@@ -37,90 +37,83 @@
                 <span class="cuerpo__filtro__eleccion">Filtro</span>
             </a>
             <input class="cuerpo__filtro__caja" type="text" placeholder="Ejemplo..."> 
-            <button class="cuerpo__filtro__boton cuerpo__filtro__boton--buscador"><img class="cuerpo__filtro__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
+            <button class="cuerpo__filtro__boton cuerpo__filtro__boton--buscador"><img class="cuerpo__filtro__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
         </form>
-        <section class="cuerpo__listado">
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/bulbasaurfront.c8a67443.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/bulbasaurback.66ad2931.svg">
+        <section class="cuerpo__listado cuerpo__listado--habilidad">
+
+            <a href="habilidad.html">
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
                 </div>
-                <div class="cuerpo__listado__items__texto">
-                    Bulbasaur
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
                 </div>
             </article>
-
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/ivysaurfront.abcbdc86.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/ivysaurback.7bb1a2d2.svg">
-                </div>
-                <div class="cuerpo__listado__items__texto">
-                    Ivysaur
-                </div>
-            </article>
-
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/venusaurfront.78eed0fc.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/venusaurback.6466385a.svg">
-                </div>
-                <div class="cuerpo__listado__items__texto">
-                    Venusaur
-                </div>
-            </article>
-
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/squirtlefront.4931b9a1.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/squirtleback.a4d58053.svg">
-                </div>
-                <div class="cuerpo__listado__items__texto">
-                    Squirtle
-                </div>
-            </article>
-
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/wartortlefront.9e2d1f3f.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/wartortleback.5cc8abe3.svg">
-                </div>
-                <div class="cuerpo__listado__items__texto">
-                    Wartortle
-                </div>
-            </article>
-
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/blastoisefront.a885e085.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/blastoiseback.851bdb8f.svg">
-                </div>
-                <div class="cuerpo__listado__items__texto">
-                    Blastoise
-                </div>
-            </article>
-
-            <article class="cuerpo__listado__items">
-                <div class="cuerpo__listado__items__imagenes">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/charmanderfront.e9e66f05.svg">
-                    <img class="cuerpo__listado__items__imagenes__imagen" src="/charmanderback.f96199a0.svg">
-                </div>
-                <div class="cuerpo__listado__items__texto">
-                    Charmander
-                </div>
-            </article>
-
-            <a href="/pokemon.html">
-                <article class="cuerpo__listado__items">
-                    <div class="cuerpo__listado__items__imagenes">
-                        <img class="cuerpo__listado__items__imagenes__imagen" src="/dittofront.7fc78619.svg">
-                        <img class="cuerpo__listado__items__imagenes__imagen" src="/dittoback.401a1217.svg">
-                    </div>
-                    <div class="cuerpo__listado__items__texto">
-                        Ditto
-                    </div>
-                </article>
             </a>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
+
+            <article class="cuerpo__listado--habilidad__items">
+                <div class="cuerpo__listado--habilidad__items__nombre">
+                    Mar Llamas
+                </div>
+                <div class="cuerpo__listado--habilidad__items__datos">
+                    <img class="cuerpo__listado--habilidad__items__datos__imagen" src="assets/images/Generaciones/primera_generacion.png"/>
+                </div>
+            </article>
 
             
         </section>
@@ -140,14 +133,14 @@
 
             <ul class="pie__seccion pie__seccion--redes">
                 <li>
-                    <a class="pie__seccion__redes" href="#"><img src="/twitter-5-48.6409059b.png"></a>
+                    <a class="pie__seccion__redes" href="#"><img  src="assets/images/Redes/twitter-5-48.png"></a>
                 </li>
                 <li>
-                    <a class="pie__seccion__redes" href="#"><img src="/facebook-5-48.40778b44.png"></a>
+                    <a class="pie__seccion__redes" href="#"><img src="assets/images/Redes/facebook-5-48.png"></a>
                     
                 </li>
                 <li>
-                    <a class="pie__seccion__redes" href="#"><img src="/instagram-48.87322e41.png"></a>
+                    <a class="pie__seccion__redes" href="#"><img src="assets/images/Redes/instagram-48.png"></a>
                     
                 </li>
             </ul>
@@ -169,18 +162,18 @@
     <div class="fondo"></div>
 
     <div class="perfil">
-        <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
+        <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="perfil__titulo">Perfil</tittle>
         <section class="perfil__avatar">
-            <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
+            <img class="perfil__avatar__imagen" src="assets/images/icons/avatar.png">
         </section>
         <section class="perfil__boton">
-            <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
+            <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
         </section>
     </div>
 
     <form class="iniciar_sesion">
-        <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
+        <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
         <section class="iniciar_sesion__caja">
             <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
@@ -194,7 +187,7 @@
     </form>
 
     <form class="registrar">
-        <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
+        <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="registrar__titulo">Registrar</tittle>
         <section class="registrar__caja">
             <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
@@ -207,9 +200,9 @@
             <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
         </section>
     </form>
-    <script src="/contacto.394f930b.js"></script>
-    <script src="/contacto.a8b2b454.js"></script>
-<script src="/buscador_pokemon.f832b993.js"></script></body>
+    <script src="assets/js/iniciar.js"></script>
+    <script src="assets/js/filtro.js"></script>
+</body>
 
 </html>
  <!-- npm run start -->

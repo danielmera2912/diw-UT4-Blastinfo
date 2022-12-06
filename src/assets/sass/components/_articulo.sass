@@ -1,0 +1,193 @@
+.cuerpo--articulo
+    background : url("../images/fondo3.png")
+    background-repeat : no-repeat
+    background-size : 100% 100% 
+    padding : 2.5rem 3.5rem 2.5rem
+    &__contenedor
+        height : 100%
+        background-color : white
+        display : grid
+        grid-template-columns : repeat(2, 1fr)
+        grid-template-rows : repeat(1fr 1fr 2fr)
+        text-align : center
+        justify-content : center
+        align-items : center
+        color : $color_oscuro
+        font-size : $s
+        font-family : $fuente_inter
+        
+    &__titulo
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 1
+        grid-row-end: 2
+        font-family: $fuente_inter
+        font-size : $xl
+        color : $color_primario
+        padding : 5rem
+        @media (max-width: 1900px) and (min-width: 1500px)
+            padding: 0rem
+    
+    &__avatar
+        //margin : 1rem
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 3
+        display : flex
+        flex-direction : column
+        justify-content : center
+        align-items : center
+
+        &__imagen
+            height: 10rem
+            // font-size : 1px
+            @media (max-width: 1400px)
+                height : 5rem
+            
+    &__sprites
+        grid-column-start: 2
+        grid-column-end: 3
+        grid-row-start: 2
+        grid-row-end: 3
+        
+        display: flex
+        justify-content : center
+        align-items : center
+        &__imagen
+            padding : 1.5rem
+            background-color : $color_secundario_claro
+            border : 1px solid $color_oscuro
+            @media (max-width: 1700px)
+                padding: 0.5rem
+            @media (max-width: 1200px)
+                padding: 0.2rem
+            
+    &__movimientos
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 3
+        grid-row-end: 4
+
+        background-color : $color_secundario_claro
+        min-height : 70%
+        max-height : 95%
+        margin : 1rem
+        //width : 80%
+        
+        border : 1px solid $color_oscuro
+        display : flex
+        flex-direction : column
+        @media (max-width: 1400px)
+            margin : 0.5rem
+        
+       
+        &__titulo
+            font-size : $l
+            color : $color_primario
+            font-family: $fuente_inter
+            border-bottom : 1px solid $color_oscuro
+            width : 100%
+            padding-bottom : 1rem
+            @media (max-width: 1400px)
+                padding-bottom : 0.5rem
+        &__movimiento1
+            display : flex
+            align-items : center
+            padding : 0.5rem
+            @media (max-width: 1400px)
+                padding : 0.25rem
+            &__elementosNombre
+                font-family: $fuente_inter
+                font-size : $s
+                color : $color_oscuro
+                width : 49%
+                
+            &__elementosDatos
+                width : 50%
+                &__tipo
+                    width : 4rem
+                    @media (max-width: 1400px)
+                        width : 2rem
+                &__movimiento
+                    width : 3.25rem
+                    @media (max-width: 1400px)
+                        width : 1.75rem
+                &__generacion
+                    width : 3.25rem
+                    @media (max-width: 1400px)
+                        width : 1.75rem
+
+    &__extraInfo
+        margin : 1rem
+        background-color : $color_secundario_claro
+        border-bottom : 1px solid $color_oscuro
+        grid-column-start: 2
+        grid-column-end: 3
+        grid-row-start: 3
+        grid-row-end: 4
+        display : grid
+        grid-template-columns : repeat(2, 1fr)
+        grid-template-rows : repeat(1fr 1fr)
+        min-height : 70%
+        max-height : 95%
+        @media (max-width: 1400px)
+            margin : 0.5rem
+        &__habilidad
+            grid-column-start: 1
+            grid-column-end: 2
+            grid-row-start: 1
+            grid-row-end: 3
+            @media (max-width: 1400px)
+                padding : 0.5rem
+            &__titulo
+                font-size : $s
+                color : $color_primario
+                padding : 2rem
+                font-family: $fuente_inter
+                border : 1px solid $color_oscuro
+            &__datos
+                padding : 1rem
+                border : 1px solid $color_oscuro
+                height : 63%
+        &__generacion
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 1
+            grid-row-end: 2
+            display : flex
+            border : 1px solid $color_oscuro
+            justify-content : space-between
+            padding : 1rem
+            align-items : center
+            @media (max-width: 1400px)
+                padding : 0.5rem
+            &__titulo
+                font-size : $s
+                color : $color_primario
+                padding : 2rem
+                font-family: $fuente_inter
+                
+            &__contenido
+                &__imagen
+                    width : 4.25rem
+        &__tipo
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 2
+            grid-row-end: 3
+            display : flex
+            border : 1px solid $color_oscuro
+            justify-content : space-between
+            padding : 1rem
+            align-items : center
+            @media (max-width: 1400px)
+                padding : 0.5rem
+            &__titulo
+                font-size : $s
+                color : $color_primario
+                padding : 2rem
+                font-family: $fuente_inter
+            &__contenido
+                &__imagen
+                    width : 5rem

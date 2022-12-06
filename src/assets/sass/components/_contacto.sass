@@ -1,0 +1,39 @@
+.cuerpo--contacto
+    display: flex
+    justify-content : center
+    align-items : center
+    padding : 1rem
+    flex-direction : column
+    width : 100%
+    background : url("../images/fondo3.png")
+    background-repeat : no-repeat
+    background-size : 100% 100% 
+    &__titulo
+        font-family: $fuente_inter
+        font-size : $xl
+        color : $color_primario
+        padding : 5rem
+    &__datos
+        margin-bottom : 1rem
+        width : 80%
+        &__nombre
+            height : 4rem
+            width : 39%
+            padding : 1rem
+        &__correo
+            height : 4rem
+            width: 60%
+            padding : 1rem
+        &__descripcion
+            margin-top : 1rem
+            width : 99.3%
+            height : 15rem
+            padding : 1rem
+        
+    &__enviar
+        @extend %boton
+        width : 10rem
+        max-height : 2rem
+        border : 1px solid $color_oscuro
+        border-radius : 5px
+        margin : auto
