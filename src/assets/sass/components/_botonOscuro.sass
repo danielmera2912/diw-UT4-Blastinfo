@@ -1,0 +1,38 @@
+.container-btn-mode
+  position: absolute
+  top:25px
+  right: 8px
+  cursor: pointer
+  z-index: 2
+  font-size:0
+  @media (max-width: 1900px) and (min-width: 1500px)
+    top: 18px
+    right : 7px
+
+.btn-mode
+  display: inline-block
+  width: 35px
+  height: 30px
+  border:2px solid $color_oscuro
+  transition: background-color .5s
+  @media (max-width: 1900px) and (min-width: 1500px)
+    width: 26px
+
+.btn-mode i 
+  display: block
+  font-size: 17px
+  text-align: center
+  line-height: 30px
+
+.btn-mode.sol
+  border-top-left-radius: 20px
+  border-bottom-left-radius: 20px
+  border-right: 1px solid transparent
+
+.btn-mode.luna
+  border-top-right-radius: 20px
+  border-bottom-right-radius: 20px
+
+.active
+  background-color: $color_secundario_oscuro
+  color: $color_claro !important

@@ -13,4 +13,4 @@ function cambiar() {
     else num = 0;
 }
 
-//# sourceMappingURL=contacto.a8b2b454.js.map
+//# sourceMappingURL=perfil.a8b2b454.js.map
