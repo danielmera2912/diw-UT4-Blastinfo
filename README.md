@@ -17,8 +17,9 @@ En definitiva, la mejor opción es el CSS externo, ya que sus ventajas son mucho
 
 
 Explicación de hojas de estilos alternativas, se implementan en el HTML de esta forma:
-<link rel="stylesheet" href="estilo-1.css" title="Estilo 1">
-<link rel="stylesheet" href="estilo-2.css" title="Estilo 2">
-<link rel="stylesheet" href="estilo-3.css" title="Estilo 3">
+
+  <link rel="stylesheet" href="estilo-1.css" title="Estilo 1">
+  <link rel="stylesheet" href="estilo-2.css" title="Estilo 2">
+  <link rel="stylesheet" href="estilo-3.css" title="Estilo 3">
 
 Y ya el usuario podrá elegir el estilo que querrá utilizar.
