@@ -1,161 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blastinfo</title>
-    <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
-    <link rel="stylesheet" href="/index.ad85b7e3.css">
-    <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    
-</head>
-<body class="pagina">
-    <section class="cuerpo__modoOscuro">
-        <div class="container-btn-mode">
-            <div id="id-sol" class="btn-mode sol active">
-               <i class="fas fa-sun"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokémon / Blastinfo</title>
+        <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
+        <link rel="stylesheet" href="/index.ad85b7e3.css">
+        <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="/favicon.ee9adb65.png" type="image/png">
+    </head>
+    <body class="pagina">
+        <!-- Botón modo oscuro -->
+        <section class="cuerpo__modoOscuro">
+            <div class="container-btn-mode">
+                <div id="id-sol" class="btn-mode sol active">
+                <i class="fas fa-sun"></i>
+                </div>
+                <div id="id-luna" class="btn-mode luna">
+                <i class="fas fa-moon"></i>
+                </div>
             </div>
-            <div id="id-luna" class="btn-mode luna">
-               <i class="fas fa-moon"></i>
-            </div>
-         </div>
-    </section>
-    <header class="encabezado encabezado--portada">
-        <a href="/index.html">
-            <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
-        </a>
-        <nav>
-            <ul class="encabezado__lista">
-                <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
-                <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
-                <li><a href="/buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
-                
-                <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
-            </ul>
-        </nav>
-            <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
-                <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
-                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
-            </form>
-        
-    </header>
-    <main class="cuerpo cuerpo--articulo">
-        <div class="cuerpo--articulo__contenedor">
-            <section class="cuerpo--articulo__titulo">
-                Ditto
-            </section>
-            <section class="cuerpo--articulo__avatar">
-                <img class="cuerpo--articulo__avatar__imagen" src="/ditto.aaa2d168.svg">
-            </section>
-        <section class="cuerpo--articulo__sprites">
-                <img class="cuerpo--articulo__sprites__imagen" src="/dittofront.7fc78619.svg">
-                <img class="cuerpo--articulo__sprites__imagen" src="/dittoback.401a1217.svg">
         </section>
-        <section class="cuerpo--articulo__movimientos">
-            <div class="cuerpo--articulo__movimientos__titulo">Movimientos</div>
-            <div class="cuerpo--articulo__movimientos__movimiento1">
-                <div class="cuerpo--articulo__movimientos__movimiento1__elementosNombre">Transformación</div>
-                <div class="cuerpo--articulo__movimientos__movimiento1__elementosDatos">
-                    <img class="cuerpo--articulo__movimientos__movimiento1__elementosDatos__tipo" src="/Normal_Pokemon.76320004.svg">
-                    <img class="cuerpo--articulo__movimientos__movimiento1__elementosDatos__movimiento" src="/Tipo_especial.3de277dd.gif">
-                    <img class="cuerpo--articulo__movimientos__movimiento1__elementosDatos__generacion" src="/primera_generacion.95bb3f10.png">
-                </div>
+        <!-- Cabecera -->
+        <header class="encabezado encabezado--portada">
+            <a href="/index.html">
+                <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
+            </a>
+            <nav>
+                <ul class="encabezado__lista">
+                    <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
+                    <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
+                    <li><a href="/buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
+                </ul>
+            </nav>
+                <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
+                    <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
+                    <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
+                </form>
+            
+        </header>
+        <!-- Cuerpo -->
+        <main class="cuerpo cuerpo--articulo">
+            <div class="cuerpo--articulo__contenedor">
+                <!-- Título -->
+                <section class="cuerpo--articulo__titulo">
+                    Ditto
+                </section>
+                <!-- Avatar -->
+                <section class="cuerpo--articulo__avatar">
+                    <img class="cuerpo--articulo__avatar__imagen" src="/ditto.aaa2d168.svg">
+                </section>
+                <!-- Sprites -->
+                <section class="cuerpo--articulo__sprites">
+                        <img class="cuerpo--articulo__sprites__imagen" src="/dittofront.7fc78619.svg">
+                        <img class="cuerpo--articulo__sprites__imagen" src="/dittoback.401a1217.svg">
+                </section>
+                <!-- Movimientos -->
+                <section class="cuerpo--articulo__movimientos">
+                    <div class="cuerpo--articulo__movimientos__titulo">Movimientos</div>
+                    <div class="cuerpo--articulo__movimientos__movimiento1">
+                        <div class="cuerpo--articulo__movimientos__movimiento1__elementosNombre">Transformación</div>
+                        <div class="cuerpo--articulo__movimientos__movimiento1__elementosDatos">
+                            <img class="cuerpo--articulo__movimientos__movimiento1__elementosDatos__tipo" src="/Normal_Pokemon.76320004.svg">
+                            <img class="cuerpo--articulo__movimientos__movimiento1__elementosDatos__movimiento" src="/Tipo_especial.3de277dd.gif">
+                            <img class="cuerpo--articulo__movimientos__movimiento1__elementosDatos__generacion" src="/primera_generacion.95bb3f10.png">
+                        </div>
+                    </div>
+                </section>
+                <!-- Información Extra -->
+                <section class="cuerpo--articulo__extraInfo">
+                    <!-- Habilidad -->
+                    <div class="cuerpo--articulo__extraInfo__habilidad">
+                        <div class="cuerpo--articulo__extraInfo__habilidad__titulo">Habilidades</div>
+                        <div class="cuerpo--articulo__extraInfo__habilidad__datos">
+                            <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad1">Flexibilidad</div>
+                            <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad2">Impostor</div>
+                            <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad3">---</div>
+                            <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad4">---</div>
+                        </div>
+                    </div>
+                    <!-- Generación -->
+                    <div class="cuerpo--articulo__extraInfo__generacion">
+                        <div class="cuerpo--articulo__extraInfo__generacion__titulo">Generación</div>
+                        <div class="cuerpo--articulo__extraInfo__generacion__contenido">
+                            <img class="cuerpo--articulo__extraInfo__generacion__contenido__imagen" src="/primera_generacion.95bb3f10.png">
+                        </div>
+                    </div>
+                    <!-- Tipo -->
+                    <div class="cuerpo--articulo__extraInfo__tipo">
+                        <div class="cuerpo--articulo__extraInfo__tipo__titulo">Tipo</div>
+                        <div class="cuerpo--articulo__extraInfo__tipo__contenido">
+                            <img class="cuerpo--articulo__extraInfo__tipo__contenido__imagen" src="/Normal_Pokemon.76320004.svg">
+                        </div>
+                    </div>
+                </section>
             </div>
+            
+        </main>
+        <!-- Pie -->
+        <footer class="pie">
+            <ul class="pie__seccion pie__seccion--redes">
+                <li>
+                    <a class="pie__seccion__redes" href="/pagina404.html"><img src="/twitter-5-48.6409059b.png"></a>
+                </li>
+                <li>
+                    <a class="pie__seccion__redes" href="/pagina404.html"><img src="/facebook-5-48.40778b44.png"></a>
+                    
+                </li>
+                <li>
+                    <a class="pie__seccion__redes" href="/pagina404.html"><img src="/instagram-48.87322e41.png"></a>
+                </li>
+            </ul>
+            <section class="pie__acceder">
+                <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
             </section>
-            <section class="cuerpo--articulo__extraInfo">
-                <div class="cuerpo--articulo__extraInfo__habilidad">
-                    <div class="cuerpo--articulo__extraInfo__habilidad__titulo">Habilidades</div>
-                    <div class="cuerpo--articulo__extraInfo__habilidad__datos">
-                        <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad1">Flexibilidad</div>
-                        <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad2">Impostor</div>
-                        <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad3">---</div>
-                        <div class="cuerpo--articulo__extraInfo__habilidad__datos__habilidad4">---</div>
-                    </div>
-                </div>
-                <div class="cuerpo--articulo__extraInfo__generacion">
-                    <div class="cuerpo--articulo__extraInfo__generacion__titulo">Generación</div>
-                    <div class="cuerpo--articulo__extraInfo__generacion__contenido">
-                        <img class="cuerpo--articulo__extraInfo__generacion__contenido__imagen" src="/primera_generacion.95bb3f10.png">
-                    </div>
-                </div>
-                <div class="cuerpo--articulo__extraInfo__tipo">
-                    <div class="cuerpo--articulo__extraInfo__tipo__titulo">Tipo</div>
-                    <div class="cuerpo--articulo__extraInfo__tipo__contenido">
-                        <img class="cuerpo--articulo__extraInfo__tipo__contenido__imagen" src="/Normal_Pokemon.76320004.svg">
-                    </div>
-                </div>
+            <section class="pie__contacto">
+                <p class="leader"> <a href="/contacto.html" class="pie__contacto__enlace">Contacto</a></p>
+            </section>
+        </footer>
+        <!-- Fondo de desplegables -->
+        <div class="fondo"></div>
+        <!-- Desplegable de acceder al Perfil -->
+        <div class="perfil">
+            <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
+            <tittle class="perfil__titulo">Perfil</tittle>
+            <section class="perfil__avatar">
+                <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
+            </section>
+            <section class="perfil__boton">
+                <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
             </section>
         </div>
-        <!-- <img class="cuerpo__fondo" src="assets/images/fondo.jpg"> -->
-        
-    </main>
-    <footer class="pie">
-
-        <ul class="pie__seccion pie__seccion--redes">
-            <li>
-                <a class="pie__seccion__redes" href="/pagina404.html"><img src="/twitter-5-48.6409059b.png"></a>
-            </li>
-            <li>
-                <a class="pie__seccion__redes" href="/pagina404.html"><img src="/facebook-5-48.40778b44.png"></a>
-                
-            </li>
-            <li>
-                <a class="pie__seccion__redes" href="/pagina404.html"><img src="/instagram-48.87322e41.png"></a>
-            </li>
-        </ul>
-           
-        <section class="pie__acceder">
-                <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
-        </section>
-        <section class="pie__contacto">
-            <p class="leader"> <a href="/contacto.html" class="pie__contacto__enlace">Contacto</a></p>
-        </section>
-    </footer>
-    <div class="fondo"></div>
-
-    <div class="perfil">
-        <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
-        <tittle class="perfil__titulo">Perfil</tittle>
-        <section class="perfil__avatar">
-            <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
-        </section>
-        <form class="perfil__boton">
-            <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
+        <!-- Desplegable de iniciar sesión -->
+        <form class="iniciar_sesion">
+            <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
+            <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
+            <section class="iniciar_sesion__caja">
+                <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
+                <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
+            </section>
+            <section class="iniciar_sesion__boton">
+                <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
+                <p>o</p>
+                <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
+            </section>
         </form>
-    </div>
-
-    <form class="iniciar_sesion">
-        <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
-        <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
-        <section class="iniciar_sesion__caja">
-            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
-            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
-        </section>
-        <section class="iniciar_sesion__boton">
-            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
-            <p>o</p>
-            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
-        </section>
-    </form>
-
-    <form class="registrar">
-        <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
-        <tittle class="registrar__titulo">Registrar</tittle>
-        <section class="registrar__caja">
-            <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
-            <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
-            <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
-        </section>
-        <section class="registrar__boton">
-            <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
-            <p>o</p>
-            <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
-        </section>
-    </form>
-    <script src="/perfil.394f930b.js"></script>
-    <script src="/perfil.a8b2b454.js"></script>
-    <script src="/perfil.2637e506.js"></script>
-<script src="/pokemon.7cad7801.js"></script></body>
-
+        <!-- Desplegable de registrar cuenta-->
+        <form class="registrar">
+            <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
+            <tittle class="registrar__titulo">Registrar</tittle>
+            <section class="registrar__caja">
+                <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
+                <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
+                <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
+            </section>
+            <section class="registrar__boton">
+                <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
+                <p>o</p>
+                <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
+            </section>
+        </form>
+        <!-- Scripts añadidos -->
+        <script src="/perfil.394f930b.js"></script>
+        <script src="/perfil.a8b2b454.js"></script>
+        <script src="/perfil.2637e506.js"></script>
+    <script src="/pokemon.7cad7801.js"></script></body>
 </html>

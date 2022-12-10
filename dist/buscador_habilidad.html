@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
     <link rel="stylesheet" href="/index.ad85b7e3.css">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    
+    <link rel="icon" href="/favicon.ee9adb65.png" type="image/png">
 </head>
 <body class="pagina">
+    <!-- Botón modo oscuro -->
     <section class="cuerpo__modoOscuro">
         <div class="container-btn-mode">
             <div id="id-sol" class="btn-mode sol active">
@@ -21,6 +22,7 @@
             </div>
          </div>
     </section>
+    <!-- Cabecera -->
     <header class="encabezado encabezado--portada">
         <a href="/index.html">
             <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
@@ -30,8 +32,6 @@
                 <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
                 <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
                 <li><a href="#" class="encabezado__lista__enlace encabezado__lista__enlace--actual">Habilidades</a></li>
-                
-                <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
             </ul>
         </nav>
             <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
@@ -40,8 +40,10 @@
             </form>
         
     </header>
+
+    <!-- Cuerpo -->
     <main class="cuerpo">
-        
+        <!-- Filtro de búsqueda -->
         <form class="cuerpo__filtro" action="https://www.wikidex.net/wiki/Blastoise"> 
             <a href="#" class="cuerpo__filtro__boton cuerpo__filtro__boton--filtro">
                 <span class="cuerpo__filtro__eleccion">Filtro</span>
@@ -49,6 +51,7 @@
             <input class="cuerpo__filtro__caja" type="text" placeholder="Ejemplo..."> 
             <button class="cuerpo__filtro__boton cuerpo__filtro__boton--buscador"><img class="cuerpo__filtro__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
         </form>
+        <!-- Listado de habilidades -->
         <section class="cuerpo__listado cuerpo__listado--habilidad">
 
             <a href="/habilidad.html">
@@ -142,7 +145,7 @@
 
             
         </section>
-
+        <!-- Páginado -->
         <nav class="cuerpo__paginado">
             <button class="cuerpo__paginado__boton"> < </button>
             <button class="cuerpo__paginado__boton"> 1 </button>
@@ -152,6 +155,7 @@
         </nav>
      
     </main> 
+    <!-- Pie -->
     <footer class="pie">
 
         <ul class="pie__seccion pie__seccion--redes">
@@ -174,8 +178,9 @@
             <p class="leader"> <a href="/contacto.html" class="pie__contacto__enlace">Contacto</a></p>
         </section>
     </footer>
+    <!-- Fondo de desplegables -->
     <div class="fondo"></div>
-
+    <!-- Desplegable de acceder al Perfil -->
     <div class="perfil">
         <a href="#" class="perfil__cerrar fa-solid fa-xmark"></a>
         <tittle class="perfil__titulo">Perfil</tittle>
@@ -186,7 +191,7 @@
             <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
         </section>
     </div>
-
+    <!-- Desplegable de iniciar sesión -->
     <form class="iniciar_sesion">
         <a href="#" class="iniciar_sesion__cerrar fa-solid fa-xmark"></a>
         <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
@@ -200,7 +205,7 @@
             <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
         </section>
     </form>
-
+    <!-- Desplegable de registrar cuenta-->
     <form class="registrar">
         <a href="#" class="registrar__cerrar fa-solid fa-xmark"></a>
         <tittle class="registrar__titulo">Registrar</tittle>
@@ -215,11 +220,9 @@
             <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
         </section>
     </form>
+    <!-- Scripts añadidos -->
     <script src="/perfil.394f930b.js"></script>
     <script src="/perfil.a8b2b454.js"></script>
     <script src="/perfil.2637e506.js"></script>
 <script src="/buscador_habilidad.7d8b307e.js"></script></body>
-
 </html>
- <!-- npm run start -->
- <!-- npx parcel src/index.html -->

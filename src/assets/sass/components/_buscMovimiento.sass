@@ -1,5 +1,7 @@
+// Se añade propiedades al listado de movimientos
 .cuerpo__listado--movimiento
     align-items : stretch
+    // se define características en común de cada objeto de la lista
     &__items
         background-color : $color_secundario_claro
         color : $color_claro
@@ -14,30 +16,36 @@
         align-items : center
         justify-content : center
         width : 100%
+        // se define cambios en sus características según la resolución de la pantalla
         @media (max-width: 1900px) and (min-width: 1500px)
             padding: 0.25rem
             height : 8rem
+        // se establece propiedades al nombre de cada objeto que representa un movimiento
         &__nombre
             width : 78%
             text-align : center
-            
             padding : 3rem
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1900px) and (min-width: 1500px)
                 padding: 1.5rem
-        &__datos
-            
+        // se establece propiedades a los datos adiccionales de cada movimiento
+        &__datos    
             width : 15%
             display : flex
             flex-direction : column
             justify-content : center
             align-items : center
             padding : 2.5rem
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1900px) and (min-width: 1500px)
                 padding: 2rem
+            // se establece propiedades a la imágen que aparece de los datos de los movimientos, en este caso es la generación
             &__generacion
                 width : 3.25rem
+            // se establece propiedades a la imágen que aparece de los datos de los movimientos, en este caso es la característica del movimiento
             &__movimiento
                 margin : 0.1rem
                 width : 3.25rem
+            // se establece propiedades a la imágen que aparece de los datos de los movimientos, en este caso es el tipo
             &__tipo
                 width : 4rem

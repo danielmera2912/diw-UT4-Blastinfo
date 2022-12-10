@@ -1,3 +1,4 @@
+// Se añade propiedades al perfil del usuario
 .cuerpo--perfil
     display : grid
     grid-template-columns : repeat(2, 1fr)
@@ -8,7 +9,7 @@
     color : $color_oscuro
     font-size : $s
     font-family : $fuente_inter
-    
+    // se añaden propiedades al avatar del perfil
     &__avatar
         margin : 1rem
         grid-column-start: 1
@@ -19,6 +20,7 @@
         flex-direction : column
         justify-content : center
         align-items : center
+        // se añaden propiedades al botón editar perfil
         &__editar
              @extend %boton
              width : 10rem
@@ -26,10 +28,12 @@
              border : 1px solid $color_oscuro
              border-radius : 5px
              margin : auto
+        // se añaden propiedades al botón editar perfil
         &__imagen
             height: 10rem
             font-size : 1px
             border-radius: 50%
+    // se añaden propiedades al contenedor del nick del usuario
     &__nick
         margin : 5px
         grid-column-start: 1
@@ -42,16 +46,17 @@
         border : 1px solid $color_oscuro
         padding : 1rem
         background-color : $color_secundario_claro
+        // se añaden propiedades al enunciado del apartado
         &__pregunta
             float : left
-            
             width : 50%
+        // se añaden propiedades a la respuesta del apartado
         &__respuesta
             float : right
             border-left : 1px solid $color_oscuro
             width : 50%
+    // se añaden propiedades al contenedor del nombre del usuario
     &__nombre
-        
         margin : 5px
         grid-column-start: 1
         grid-column-end: 2
@@ -63,15 +68,16 @@
         border : 1px solid $color_oscuro
         padding : 1rem
         align-items : center
+        // se añaden propiedades al enunciado del apartado
         &__pregunta
             float : left
-            
             width : 50%
+        // se añaden propiedades a la respuesta del apartado
         &__respuesta
             float : right
             border-left : 1px solid $color_oscuro
-            
             width : 50%
+    // se añaden propiedades al contenedor del pokémon favorito del usuario
     &__pkmFavorito
         margin : 5px
         grid-column-start: 1
@@ -84,15 +90,16 @@
         border : 1px solid $color_oscuro
         padding : 1rem
         align-items : center
-
+        // se añaden propiedades al enunciado del apartado
         &__pregunta
             float : left
-            
             width : 50%
+        // se añaden propiedades a la respuesta del apartado
         &__respuesta
             float : right
             border-left : 1px solid $color_oscuro
             width : 50%
+    // se añaden propiedades al contenedor de la descripción del usuario
     &__descripcion
         margin : 5px
         grid-column-start: 2
@@ -101,19 +108,14 @@
         grid-row-end: 5
         background-color : $color_secundario_claro
         min-height : 93%
-        //width : 80%
         padding : 1rem
         border : 1px solid $color_oscuro
         display : flex
         flex-direction : column
         justify-content : space-evenly
         align-items: center
+        // se añaden propiedades al título del contenedor de la descripción del usuario
         &__titulo
-            
             border-bottom : 1px solid $color_oscuro
             width : 100%
             padding-bottom : 1rem
-        // &__contenido
-        //     display : flex
-        //     justify-content : center
-            

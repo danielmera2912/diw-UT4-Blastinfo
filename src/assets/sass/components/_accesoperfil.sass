@@ -1,3 +1,4 @@
+// Estilos para el cuadro desplegable que te permite acceder a la página del usuario.
 .perfil
     height : 600px
     width : 500px
@@ -11,7 +12,7 @@
     flex-direction: column
     justify-content : space-between
     padding : 1.5rem
-    // border : 1px solid black
+    // Se define las propiedas para el botón cerrar, que te permite cerrar el desplegable al pulsar.
     &__cerrar
         width : 25px
         position : absolute
@@ -19,28 +20,32 @@
         right : 0px
         font-size : 2rem
         color : $color_primario
+    // Se define las propiedades para el título que representa el funcionamiento del desplegable.
     &__titulo
         width : 100%
         color : $color_primario
         font-size : $xl
         font-family : $fuente_oswald
         text-align : center
+    // Se define las propiedades que tendrá el avatar establecido por el usuario, aunque por defecto se tendría uno.
     &__avatar
         display : flex
         flex-direction : column
         justify-content : center
         align-items : center
+        // Se define las propiedades de la imágen que contiene el avatar.
         &__imagen
             margin : 2rem
             height: 20rem
             font-size : $xs
             border-radius: 50%
-            
+    // Se define el botón que te redirigirá a la página del usuario.
     &__boton
         display : flex
         flex-direction : column
         justify-content : center
         align-items : center
+        // Se define el texto que posee el botón.
         &__opcion
             background-color : $color_primario
             height : 2.8rem
@@ -50,6 +55,8 @@
             font-size : $xs
             font-family : $fuente_inter
             cursor : pointer
+// Se define las características del fondo que poseerá el desplegable, que será transparente con opacidad para no
+// darle importancia a los elementos del fondo y también que te permite que al pulsar, cierras el desplegable.
 .fondo
     height : 100vh
     width : 100vw

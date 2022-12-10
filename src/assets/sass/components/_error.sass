@@ -1,0 +1,77 @@
+// se establece valores para el cuerpo que tiene la página de ERROR 404
+.cuerpo--error
+    display : flex
+    text-align : center
+    justify-content : center
+    align-items : center
+    color : $color_oscuro
+    font-size : $s
+    font-family : $fuente_inter
+    height : 100%
+    flex-direction : column
+    // se establece los valores para el título de la página
+    &__titulo
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 1
+        grid-row-end: 2
+        font-family: $fuente_inter
+        font-size : $xl
+        color : $color_primario
+        padding : 1rem
+    
+    // se establece los valores del contenedor que contiene el mensaje de error 404
+
+    &__contenedor 
+        background-color: $color_secundario_claro
+        margin: auto
+        height: 600px
+        width: 600px
+        position: relative
+
+        // se establece los valores que tendrá el texto "4" que empieza a formar "404", haciendo referencia al error 404
+        &__text1 
+            color: $color_claro
+            font-family: 'Nunito Sans', sans-serif
+            font-size: 11rem
+            position: absolute
+            left: 20%
+            top: 8%
+        // se establece los valores que tendrá el texto "4" que termina de formar "404", haciendo referencia al error 404
+        &__text2 
+            color: #ffffff
+            font-family: 'Nunito Sans', sans-serif
+            font-size: 11rem
+            position: absolute
+            left: 68%
+            top: 8%
+        // establece los valores de la imágen de la pokeball, que simula el "0" para formar "404", haciendo referencia al error 404
+        &__img
+            -webkit-transition: all 0.5s ease-out
+            -moz-transition: all 0.5s ease
+            -ms-transition: all 0.5s ease
+            position : absolute
+            font-size: 10rem
+            width : 8rem
+            left: 42%
+            top: 15%
+            color: $color_claro
+        // se establece la animación para cuando el cursor pase por encima de la imágen de la Pokeball, 
+        // provocando un giro de 90 grados y termine volviendo a la normalidad
+        &__img:hover
+            -webkit-transform: rotate(-90deg)
+            -moz-transform: rotate(-90deg)
+            -ms-transform: rotate(-90deg)
+            transform: rotate(-90deg)
+        
+        
+        // se establece las propiedades que tendrá el mensaje que aparece en el contenedor, informando del error
+        &__mensaje
+            text-align: center
+            font-family: 'Nunito Sans', sans-serif
+            font-size: 1.6rem
+            position: absolute
+            left: 16%
+            top: 45%
+            width: 75%
+        

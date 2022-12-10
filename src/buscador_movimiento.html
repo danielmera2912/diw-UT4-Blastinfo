@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="assets/sass/base/_reset.sass">
     <link rel="stylesheet" href="assets/sass/main.sass">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    
+    <link  rel="icon"  href="assets/images/favicon.png" type="image/png" />
 </head>
 <body class="pagina">
+    <!-- Botón modo oscuro -->
     <section class="cuerpo__modoOscuro">
         <div class="container-btn-mode">
             <div id="id-sol" class="btn-mode sol active">
@@ -21,6 +22,7 @@
             </div>
          </div>
     </section>
+    <!-- Cabecera -->
     <header class="encabezado encabezado--portada">
         <a href="index.html">
             <img class="encabezado__lista__logo" src="assets/images/logo.svg">
@@ -31,7 +33,6 @@
                 <li><a href="#" class="encabezado__lista__enlace encabezado__lista__enlace--actual">Movimientos</a></li>
                 <li><a href="buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
                 
-                <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
             </ul>
         </nav>
             <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
@@ -40,8 +41,9 @@
             </form>
         
     </header>
+    <!-- Cuerpo -->
     <main class="cuerpo">
-        
+        <!-- Filtro de búsqueda -->
         <form class="cuerpo__filtro" action="https://www.wikidex.net/wiki/Blastoise"> 
             <a href="#" class="cuerpo__filtro__boton cuerpo__filtro__boton--filtro">
                 <span class="cuerpo__filtro__eleccion">Filtro</span>
@@ -49,6 +51,7 @@
             <input class="cuerpo__filtro__caja" type="text" placeholder="Ejemplo..."> 
             <button class="cuerpo__filtro__boton cuerpo__filtro__boton--buscador"><img class="cuerpo__filtro__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
         </form>
+        <!-- Listado de movimientos -->
         <section class="cuerpo__listado cuerpo__listado--movimiento">
 
             <a href="movimiento.html">
@@ -156,7 +159,7 @@
             </a>
             
         </section>
-
+        <!-- Páginado -->
         <nav class="cuerpo__paginado">
             <button class="cuerpo__paginado__boton"> < </button>
             <button class="cuerpo__paginado__boton"> 1 </button>
@@ -164,10 +167,8 @@
             <button class="cuerpo__paginado__boton"> 3 </button>
             <button class="cuerpo__paginado__boton"> > </button>
         </nav>
-        <!-- <img class="cuerpo__fondo" src="assets/images/fondo.jpg"> -->
-        <!-- <img src="assets/images/Generaciones/cuarta_generacion.pn  g"/>
-        <img class="principal__tipo" src="assets/images/Tipos/Acero_Pokemon.svg"/> -->
     </main>
+    <!-- Pie -->
     <footer class="pie">
         <ul class="pie__seccion pie__seccion--redes">
             <li>
@@ -188,8 +189,9 @@
             <p class="leader"> <a href="contacto.html" class="pie__contacto__enlace">Contacto</a></p>
         </section>
     </footer>
+    <!-- Fondo de desplegables -->
     <div class="fondo"></div>
-
+    <!-- Desplegable de acceder al Perfil -->
     <div class="perfil">
         <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="perfil__titulo">Perfil</tittle>
@@ -200,7 +202,7 @@
             <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
         </section>
     </div>
-
+    <!-- Desplegable de iniciar sesión -->
     <form class="iniciar_sesion">
         <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
@@ -214,7 +216,7 @@
             <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
         </section>
     </form>
-
+    <!-- Desplegable de registrar cuenta-->
     <form class="registrar">
         <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="registrar__titulo">Registrar</tittle>
@@ -229,6 +231,7 @@
             <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
         </section>
     </form>
+    <!-- Scripts añadidos -->
     <script src="assets/js/iniciar.js"></script>
     <script src="assets/js/filtro.js"></script>
     <script src="assets/js/oscuro.js"></script>

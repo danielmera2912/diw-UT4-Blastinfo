@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="assets/sass/base/_reset.sass">
     <link rel="stylesheet" href="assets/sass/main.sass">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    
+    <link  rel="icon"  href="assets/images/favicon.png" type="image/png" />
 </head>
 <body class="pagina">
+    <!-- Botón modo oscuro -->
     <section class="cuerpo__modoOscuro">
         <div class="container-btn-mode">
             <div id="id-sol" class="btn-mode sol active">
@@ -21,6 +22,7 @@
             </div>
          </div>
     </section>
+    <!-- Cabecera -->
     <header class="encabezado encabezado--portada">
         <a href="index.html">
             <img class="encabezado__lista__logo" src="assets/images/logo.svg">
@@ -40,6 +42,7 @@
             </form>
         
     </header>
+    <!-- Cuerpo -->
     <main class="cuerpo cuerpo--articulo--movimiento">
             <section class="cuerpo--articulo--movimiento__titulo">
                 Transformación
@@ -56,11 +59,10 @@
                     La banda de elección, la bufanda de elección y las especificaciones de elección permanecen vigentes y el usuario debe seleccionar un nuevo movimiento.
                     Este movimiento no puede ser copiado por un movimiento de espejo, ni forzado por un bis.</content>
             </section>
-        <!-- <img class="cuerpo__fondo" src="assets/images/fondo.jpg"> -->
         
     </main>
+    <!-- Pie -->
     <footer class="pie">
-
         <ul class="pie__seccion pie__seccion--redes">
             <li>
                 <a class="pie__seccion__redes" href="pagina404.html"><img  src="assets/images/Redes/twitter-5-48.png"></a>
@@ -73,27 +75,27 @@
                 <a class="pie__seccion__redes" href="pagina404.html"><img src="assets/images/Redes/instagram-48.png"></a>
             </li>
         </ul>
-
         <section class="pie__acceder">
-                <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
+            <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
         </section>
         <section class="pie__contacto">
             <p class="leader"> <a href="contacto.html" class="pie__contacto__enlace">Contacto</a></p>
         </section>
     </footer>
+    <!-- Fondo de desplegables -->
     <div class="fondo"></div>
-
+    <!-- Desplegable de acceder al Perfil -->
     <div class="perfil">
         <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="perfil__titulo">Perfil</tittle>
         <section class="perfil__avatar">
-            <img class="perfil__avatar__imagen" src="assets/images/icons/avatar.png"></a>
+            <img class="perfil__avatar__imagen" src="assets/images/icons/avatar.png">
         </section>
-        <form class="perfil__boton">
+        <section class="perfil__boton">
             <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
-        </form>
+        </section>
     </div>
-
+    <!-- Desplegable de iniciar sesión -->
     <form class="iniciar_sesion">
         <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
@@ -107,7 +109,7 @@
             <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
         </section>
     </form>
-
+    <!-- Desplegable de registrar cuenta-->
     <form class="registrar">
         <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="registrar__titulo">Registrar</tittle>
@@ -122,11 +124,10 @@
             <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
         </section>
     </form>
+    <!-- Scripts añadidos -->
     <script src="assets/js/iniciar.js"></script>
     <script src="assets/js/filtro.js"></script>
     <script src="assets/js/oscuro.js"></script>
 </body>
 
 </html>
- <!-- npm run start -->
- <!-- npx parcel src/index.html -->

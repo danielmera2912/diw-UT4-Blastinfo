@@ -1,3 +1,4 @@
+// Se añade las propiedades de cómo se visualizará la página de contacto
 .cuerpo--contacto
     display: flex
     justify-content : center
@@ -8,28 +9,33 @@
     background : url("../images/fondo3.png")
     background-repeat : no-repeat
     background-size : 100% 100% 
+    // se establece propiedades al título de la página del contacto
     &__titulo
         font-family: $fuente_inter
         font-size : $xl
         color : $color_primario
         padding : 5rem
+    // se establece propiedades a los datos del formulario de contacto
     &__datos
         margin-bottom : 1rem
         width : 80%
+        // se establece las propiedades que tendrá el campo nombre del formulario de contacto
         &__nombre
             height : 4rem
             width : 39%
             padding : 1rem
+        // se establece las propiedades que tendrá el campo correo del formulario de contacto
         &__correo
             height : 4rem
             width: 60%
             padding : 1rem
+        // se establece las propiedades que tendrá el campo descripción del formulario de contacto
         &__descripcion
             margin-top : 1rem
             width : 99.3%
             height : 15rem
             padding : 1rem
-        
+    // se establece las propiedades que tendrá el botón para enviar los datos del formulario de contacto    
     &__enviar
         @extend %boton
         width : 10rem

@@ -7,8 +7,10 @@
     <title>Portada / BlastInfo</title>
     <link rel="stylesheet" href="assets/sass/main.sass">
     <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+    <link  rel="icon"  href="assets/images/favicon.png" type="image/png" />
 </head>
 <body class="pagina">
+    <!-- Botón modo oscuro -->
     <section class="cuerpo__modoOscuro">
         <div class="container-btn-mode">
             <div id="id-sol" class="btn-mode sol active">
@@ -19,6 +21,7 @@
             </div>
          </div>
     </section>
+    <!-- Cabecera -->
     <header class="encabezado encabezado--portada">
         <nav>
             <ul class="encabezado__lista">
@@ -29,17 +32,22 @@
         </nav>
         
     </header>
+    <!-- Cuerpo -->
     <main class="cuerpo cuerpo--fondo">
-
+        <!-- Logo -->
         <img class="cuerpo__logo" src="assets/images/logo.svg">
+        <!-- Título -->
         <h1 class="cuerpo__titulo">Blastinfo</h1>
+        <!-- Subtítulo -->
         <h2 class="cuerpo__subtitulo">Busca a tus Pokémon favoritos</h2>
+        <!-- Buscador -->
         <form class="cuerpo__buscador" action="https://www.wikidex.net/wiki/Blastoise">
             <input class="cuerpo__buscador__caja" type="text" placeholder="Buscar..."> 
             <button class="cuerpo__buscador__boton"><img class="cuerpo__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
         </form>
 
     </main>
+    <!-- Pie -->
     <footer class="pie">
         <ul class="pie__seccion pie__seccion--redes">
             <li>
@@ -60,8 +68,9 @@
             <p class="leader"> <a href="contacto.html" class="pie__contacto__enlace">Contacto</a></p>
         </section>
     </footer>
+    <!-- Fondo de desplegables -->
     <div class="fondo"></div>
-
+    <!-- Desplegable de acceder al Perfil -->
     <div class="perfil">
         <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="perfil__titulo">Perfil</tittle>
@@ -72,7 +81,7 @@
             <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
         </section>
     </div>
-
+    <!-- Desplegable de iniciar sesión -->
     <form class="iniciar_sesion">
         <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
@@ -86,7 +95,7 @@
             <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
         </section>
     </form>
-
+    <!-- Desplegable de registrar cuenta-->
     <form class="registrar">
         <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
         <tittle class="registrar__titulo">Registrar</tittle>
@@ -101,10 +110,15 @@
             <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
         </section>
     </form>
+    <!-- Scripts añadidos -->
     <script src="assets/js/iniciar.js"></script>
     <script src="assets/js/filtro.js"></script>
     <script src="assets/js/oscuro.js"></script>
 </body>
+<!-- Ejemplo de como se añade css interno -->
+<style type="text/css">
+    .cuerpo__movimientos{
+        width: 3.375rem;
+    }
+</style>
 </html>
- <!-- npm run start -->
- <!-- npx parcel src/index.html -->

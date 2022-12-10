@@ -1,8 +1,10 @@
+// Se añade propiedades al listado de Pokémon
 .cuerpo--articulo
     background : url("../images/fondo3.png")
     background-repeat : no-repeat
     background-size : 100% 100% 
     padding : 2.5rem 3.5rem 2.5rem
+    // se establece la estructura del contenedor de la información del Pokémon
     &__contenedor
         height : 100%
         background-color : white
@@ -15,7 +17,7 @@
         color : $color_oscuro
         font-size : $s
         font-family : $fuente_inter
-        
+    // se añade propiedades al título de la página del Pokémon
     &__titulo
         grid-column-start: 1
         grid-column-end: 3
@@ -25,9 +27,10 @@
         font-size : $xl
         color : $color_primario
         padding : 5rem
+        // se define cambios en sus características según la resolución de la pantalla
         @media (max-width: 1900px) and (min-width: 1500px)
             padding: 0rem
-    
+    // se añade propiedades al avatar de la página del Pokémon
     &__avatar
         //margin : 1rem
         grid-column-start: 1
@@ -38,50 +41,49 @@
         flex-direction : column
         justify-content : center
         align-items : center
-
+        // se añade propiedades para la imágen que pertenece al avatar
         &__imagen
             height: 10rem
-            // font-size : 1px
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1900px) and (min-width: 1500px)
                 height : 5rem
-            
+    // se añade propiedades al contenedor de los sprites
     &__sprites
         grid-column-start: 2
         grid-column-end: 3
         grid-row-start: 2
         grid-row-end: 3
-        
         display: flex
         justify-content : center
         align-items : center
+        // se añade propiedades a los sprites
         &__imagen
             padding : 1.5rem
             background-color : $color_secundario_claro
             border : 1px solid $color_oscuro
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1900px) and (min-width: 1500px)
                 padding: 0.5rem
             @media (max-width: 1900px) and (min-width: 1500px)
                 padding: 0.2rem
-            
+    // se añaden propiedades al contenedor de los movimientos del Pokémon 
     &__movimientos
         grid-column-start: 1
         grid-column-end: 2
         grid-row-start: 3
         grid-row-end: 4
-
         background-color : $color_secundario_claro
         min-height : 70%
         max-height : 95%
         margin : 1rem
-        //width : 80%
-        
         border : 1px solid $color_oscuro
         display : flex
         flex-direction : column
+        // se define cambios en sus características según la resolución de la pantalla
         @media (max-width: 1900px) and (min-width: 1500px)
             margin : 0.5rem
         
-       
+        // se añade propiedades al título del contenedor movimientos del Pokémon
         &__titulo
             font-size : $l
             color : $color_primario
@@ -89,35 +91,45 @@
             border-bottom : 1px solid $color_oscuro
             width : 100%
             padding-bottom : 1rem
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1900px) and (min-width: 1500px)
                 padding-bottom : 0.5rem
+        // se añade propiedades a los movimientos del contenedor movimientos del Pokémon
         &__movimiento1
             display : flex
             align-items : center
             padding : 0.5rem
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1900px) and (min-width: 1500px)
                 padding : 0.25rem
+            // se define propiedades al nombre de los movimientos
             &__elementosNombre
                 font-family: $fuente_inter
                 font-size : $s
                 color : $color_oscuro
                 width : 49%
-                
+            // se define propiedades a los datos de los movimientos
             &__elementosDatos
                 width : 50%
+                // se define propiedades a la imágen del tipo del movimiento
                 &__tipo
                     width : 4rem
+                    // se define cambios en sus características según la resolución de la pantalla
                     @media (max-width: 1900px) and (min-width: 1500px)
                         width : 2rem
+                // se define propiedades a la imágen de la característica movimiento del movimiento
                 &__movimiento
                     width : 3.25rem
+                    // se define cambios en sus características según la resolución de la pantalla
                     @media (max-width: 1900px) and (min-width: 1500px)
                         width : 1.75rem
+                // se define propiedades a la imágen de la generación del movimiento
                 &__generacion
                     width : 3.25rem
+                    // se define cambios en sus características según la resolución de la pantalla
                     @media (max-width: 1900px) and (min-width: 1500px)
                         width : 1.75rem
-
+    // se añaden propiedades al contenedor de la información extra del Pokémon
     &__extraInfo
         margin : 1rem
         background-color : $color_secundario_claro
@@ -131,25 +143,31 @@
         grid-template-rows : repeat(1fr 1fr)
         min-height : 70%
         max-height : 95%
+        // se define cambios en sus características según la resolución de la pantalla
         @media (max-width: 1900px) and (min-width: 1500px)
             margin : 0.5rem
+        // se definen valores a las habilidades del Pokémon
         &__habilidad
             grid-column-start: 1
             grid-column-end: 2
             grid-row-start: 1
             grid-row-end: 3
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1400px)
                 padding : 0.5rem
+            // se definen valores al título de las habilidades del Pokémon
             &__titulo
                 font-size : $s
                 color : $color_primario
                 padding : 2rem
                 font-family: $fuente_inter
                 border : 1px solid $color_oscuro
+            // se definen valores a los datos de las habilidades del Pokémon
             &__datos
                 padding : 1rem
                 border : 1px solid $color_oscuro
                 height : 63%
+        // se definen valores a la generación del Pokémon
         &__generacion
             grid-column-start: 2
             grid-column-end: 3
@@ -160,17 +178,21 @@
             justify-content : space-between
             padding : 1rem
             align-items : center
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1400px)
                 padding : 0.5rem
+            // se definen valores al título de la generación del Pokémon
             &__titulo
                 font-size : $s
                 color : $color_primario
                 padding : 2rem
                 font-family: $fuente_inter
-                
+            // se definen valores al contenido de la generación del Pokémon
             &__contenido
+                // se definen valores a la imagen del contenido de la generación del Pokémon
                 &__imagen
                     width : 4.25rem
+        // se definen valores al tipo del Pokémon
         &__tipo
             grid-column-start: 2
             grid-column-end: 3
@@ -181,13 +203,17 @@
             justify-content : space-between
             padding : 1rem
             align-items : center
+            // se define cambios en sus características según la resolución de la pantalla
             @media (max-width: 1400px)
                 padding : 0.5rem
+            // se definen valores al título del tipo del Pokémon
             &__titulo
                 font-size : $s
                 color : $color_primario
                 padding : 2rem
                 font-family: $fuente_inter
+            // se definen valores al contenido del tipo del Pokémon
             &__contenido
+                // se definen valores a la imagen del contenido del tipo del Pokémon
                 &__imagen
                     width : 5rem

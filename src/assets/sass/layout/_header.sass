@@ -1,13 +1,12 @@
+// se añaden propiedades al encabezado de las páginas
 .encabezado
     height: 8vh
     padding : 1rem
     background-color : $color_primario
-    // width : 100%
     display : flex
-    
     justify-content : space-around
-    
     align-items : center
+    // se añaden propiedades a la lista de elementos que tiene el encabezado
     &__lista
         height : 10%
     &__lista li
@@ -17,40 +16,47 @@
         padding : 4.5rem
         @media (max-width: 1700px)
             padding : 1.5rem
+    // se añaden propiedades a los enlaces de la lista de elementos que tiene el encabezado
     &__lista__enlace
         color : $color_claro
         padding : 0.5rem 1.5rem 0.5rem 1.5rem
         border-radius : 5px
+    // se añaden propiedades a los enlaces de la lista de elementos que tiene el encabezado al pasar el ratón por encima
     &__lista__enlace:hover
         background-color : $color_secundario_oscuro
+    // se añaden propiedades a los enlaces de la lista de elementos que tiene el encabezado al ser el actualmente pulsado, por lo que
+    // no te redirige a ninguna página porque ya te encuentras en ella
     &__lista__enlace--actual
         color : $color_secundario_claro
+    // se añaden propiedades al logo del encabezado
     &__lista__logo
         height: $xxl
+    // se añaden propiedades al contenedor de búsqueda del encabezado
     &__lista__buscador
         display : flex
         justify-content : center
         align-tems : center
         text-align : center
-        
+        // se añaden propiedades al input de búsqueda del encabezado
         &__caja
             padding-left : 1em
             height : 3.3rem
             width :20rem
-            // width: 80%
             border-top-left-radius : 5px
             border-bottom-left-radius : 5px
             font-size : $xs
             outline : none
+        // se añaden propiedades al botón de búsqueda del encabezado
         &__boton
             background-color : $color_primario
             height : 3.3rem
             width : 3.3rem
             border-top-right-radius : 5px
             border-bottom-right-radius : 5px
-            // border-color : $color_primario
+            // se añaden propiedades a la imágen del botón de búsqueda del encabezado
             &__imagen
                 width : 1.7rem
+        // se añaden propiedades al botón de búsqueda del encabezado al pasar el ratón por encima
         &__boton:hover
             background-color : $color_secundario_oscuro
 

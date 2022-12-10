@@ -1,141 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blastinfo</title>
-    <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
-    <link rel="stylesheet" href="/index.ad85b7e3.css">
-    <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    
-</head>
-<body class="pagina">
-    <section class="cuerpo__modoOscuro">
-        <div class="container-btn-mode">
-            <div id="id-sol" class="btn-mode sol active">
-               <i class="fas fa-sun"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil / Blastinfo</title>
+        <link rel="stylesheet" href="/buscador_pokemon.2a6350ec.css">
+        <link rel="stylesheet" href="/index.ad85b7e3.css">
+        <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="/favicon.ee9adb65.png" type="image/png">
+    </head>
+    <body class="pagina">
+        <!-- Botón modo oscuro -->
+        <section class="cuerpo__modoOscuro">
+            <div class="container-btn-mode">
+                <div id="id-sol" class="btn-mode sol active">
+                <i class="fas fa-sun"></i>
+                </div>
+                <div id="id-luna" class="btn-mode luna">
+                <i class="fas fa-moon"></i>
+                </div>
             </div>
-            <div id="id-luna" class="btn-mode luna">
-               <i class="fas fa-moon"></i>
-            </div>
-         </div>
-    </section>
-    <header class="encabezado encabezado--portada">
-        <a href="/index.html">
-            <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
-        </a>
-        <nav>
-            <ul class="encabezado__lista">
-                <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
-                <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
-                <li><a href="/buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
-                
-                <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
-            </ul>
-        </nav>
-            <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
-                <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
-                <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
-            </form>
-        
-    </header>
-    <main class="cuerpo cuerpo--perfil">
-        
-        <section class="cuerpo--perfil__avatar">
-            <img class="cuerpo--perfil__avatar__imagen" src="/avatar.cae17f79.png">
-            <a href="#" class="cuerpo--perfil__avatar__editar">
-                Editar Perfil
+        </section>
+        <!-- Cabecera -->
+        <header class="encabezado encabezado--portada">
+            <a href="/index.html">
+                <img class="encabezado__lista__logo" src="/logo.5b34b4d1.svg">
             </a>
-        </section>
-       <section class="cuerpo--perfil__nombre">
-            <div class="cuerpo--perfil__nombre__pregunta">Nombre</div>
-            <div class="cuerpo--perfil__nombre__respuesta">Juan Perez</div>
-       </section>
-       <section class="cuerpo--perfil__nick">
-        <div class="cuerpo--perfil__nick__pregunta">Nick</div>
-        <div class="cuerpo--perfil__nick__respuesta">Juanpe</div>
-        </section>
-        <section class="cuerpo--perfil__pkmFavorito">
-            <div class="cuerpo--perfil__pkmFavorito__pregunta">Pokémon favorito</div>
-            <div class="cuerpo--perfil__pkmFavorito__respuesta">Infernape</div>
-        </section>
-        <section class="cuerpo--perfil__descripcion">
-            <header class="cuerpo--perfil__descripcion__titulo">Descripción</header>
-            <content class="cuerpo--perfil__descripcion__contenido">Soy un chico muy fan de Pokémon y me encanta comprarme los nuevos videojuegos que salen,
-                desde pequeño pequeño empecé a comprarme los juegos empezando por el pokemon rojo
-                ya después me compré el zafiro y ya en la epoca de la ds dude entre comprarme el perla o el diamante
-                pero finalmente me compre el perla y tenia un chimchar que termino siendo un infernape
-                y por ese motivo infernape es mi pokemon favorito</content>
-        </section>
-    </main>
-    <footer class="pie">
+            <nav>
+                <ul class="encabezado__lista">
+                    <li><a href="/buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
+                    <li><a href="/buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
+                    <li><a href="/buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
+                    
+                    <!-- <li><a href="#" class="encabezado__lista__enlace fa-solid fa-bars"></a></li> -->
+                </ul>
+            </nav>
+                <form class="encabezado__lista__buscador" action="https://www.wikidex.net/wiki/Blastoise">
+                    <input class="encabezado__lista__buscador__caja" type="text" placeholder="Buscar..."> 
+                    <button class="encabezado__lista__buscador__boton"><img class="encabezado__lista__buscador__boton__imagen" src="/search-3-48.6d093f2f.png"></button>
+                </form>
+            
+        </header>
+        <!-- Cuerpo -->
+        <main class="cuerpo cuerpo--perfil">
+            <!-- Avatar -->
+            <section class="cuerpo--perfil__avatar">
+                <img class="cuerpo--perfil__avatar__imagen" src="/avatar.cae17f79.png">
+                <a href="#" class="cuerpo--perfil__avatar__editar">
+                    Editar Perfil
+                </a>
+            </section>
+            <!-- Nombre -->
+            <section class="cuerpo--perfil__nombre">
+                    <div class="cuerpo--perfil__nombre__pregunta">Nombre</div>
+                    <div class="cuerpo--perfil__nombre__respuesta">Juan Perez</div>
+            </section>
+            <!-- Nick -->
+            <section class="cuerpo--perfil__nick">
+                <div class="cuerpo--perfil__nick__pregunta">Nick</div>
+                <div class="cuerpo--perfil__nick__respuesta">Juanpe</div>
+            </section>
+            <!-- Pokémon Favorito -->
+            <section class="cuerpo--perfil__pkmFavorito">
+                <div class="cuerpo--perfil__pkmFavorito__pregunta">Pokémon favorito</div>
+                <div class="cuerpo--perfil__pkmFavorito__respuesta">Infernape</div>
+            </section>
+            <!-- Descripción -->
+            <section class="cuerpo--perfil__descripcion">
+                <header class="cuerpo--perfil__descripcion__titulo">Descripción</header>
+                <content class="cuerpo--perfil__descripcion__contenido">Soy un chico muy fan de Pokémon y me encanta comprarme los nuevos videojuegos que salen,
+                    desde pequeño pequeño empecé a comprarme los juegos empezando por el pokemon rojo
+                    ya después me compré el zafiro y ya en la epoca de la ds dude entre comprarme el perla o el diamante
+                    pero finalmente me compre el perla y tenia un chimchar que termino siendo un infernape
+                    y por ese motivo infernape es mi pokemon favorito</content>
+            </section>
+        </main>
+        <!-- Pie -->
+        <footer class="pie">
 
-        <ul class="pie__seccion pie__seccion--redes">
-            <li>
-                <a class="pie__seccion__redes" href="/pagina404.html"><img src="/twitter-5-48.6409059b.png"></a>
-            </li>
-            <li>
-                <a class="pie__seccion__redes" href="/pagina404.html"><img src="/facebook-5-48.40778b44.png"></a>
-                
-            </li>
-            <li>
-                <a class="pie__seccion__redes" href="/pagina404.html"><img src="/instagram-48.87322e41.png"></a>
-            </li>
-        </ul>
-        <section class="pie__acceder">
-                <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
-        </section>
-        <section class="pie__contacto">
-            <p class="leader"> <a href="/contacto.html" class="pie__contacto__enlace">Contacto</a></p>
-        </section>
-    </footer>
-    <div class="fondo"></div>
-
-    <div class="perfil">
-        <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
-        <tittle class="perfil__titulo">Perfil</tittle>
-        <section class="perfil__avatar">
-            <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
-        </section>
-        <form class="perfil__boton">
-            <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
+            <ul class="pie__seccion pie__seccion--redes">
+                <li>
+                    <a class="pie__seccion__redes" href="/pagina404.html"><img src="/twitter-5-48.6409059b.png"></a>
+                </li>
+                <li>
+                    <a class="pie__seccion__redes" href="/pagina404.html"><img src="/facebook-5-48.40778b44.png"></a>
+                    
+                </li>
+                <li>
+                    <a class="pie__seccion__redes" href="/pagina404.html"><img src="/instagram-48.87322e41.png"></a>
+                </li>
+            </ul>
+            <section class="pie__acceder">
+                    <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
+            </section>
+            <section class="pie__contacto">
+                <p class="leader"> <a href="/contacto.html" class="pie__contacto__enlace">Contacto</a></p>
+            </section>
+        </footer>
+        <!-- Fondo de desplegables -->
+        <div class="fondo"></div>
+        <!-- Desplegable de acceder al Perfil -->
+        <div class="perfil">
+            <a href="#"><img class="perfil__cerrar" src="/cerrar.33060f79.svg"></a>
+            <tittle class="perfil__titulo">Perfil</tittle>
+            <section class="perfil__avatar">
+                <img class="perfil__avatar__imagen" src="/avatar.cae17f79.png">
+            </section>
+            <form class="perfil__boton">
+                <a href="/perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
+            </form>
+        </div>
+        <!-- Desplegable de iniciar sesión -->
+        <form class="iniciar_sesion">
+            <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
+            <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
+            <section class="iniciar_sesion__caja">
+                <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
+                <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
+            </section>
+            <section class="iniciar_sesion__boton">
+                <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
+                <p>o</p>
+                <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
+            </section>
         </form>
-    </div>
-
-    <form class="iniciar_sesion">
-        <a href="#"><img class="iniciar_sesion__cerrar" src="/cerrar.33060f79.svg"></a>
-        <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
-        <section class="iniciar_sesion__caja">
-            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
-            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
-        </section>
-        <section class="iniciar_sesion__boton">
-            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
-            <p>o</p>
-            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
-        </section>
-    </form>
-
-    <form class="registrar">
-        <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
-        <tittle class="registrar__titulo">Registrar</tittle>
-        <section class="registrar__caja">
-            <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
-            <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
-            <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
-        </section>
-        <section class="registrar__boton">
-            <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
-            <p>o</p>
-            <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
-        </section>
-    </form>
-    <script src="/perfil.394f930b.js"></script>
-    <script src="/perfil.a8b2b454.js"></script>
-    <script src="/perfil.2637e506.js"></script>
-<script src="/perfil.73755eb3.js"></script></body>
-
+        <!-- Desplegable de registrar cuenta-->
+        <form class="registrar">
+            <a href="#"><img class="registrar__cerrar" src="/cerrar.33060f79.svg"></a>
+            <tittle class="registrar__titulo">Registrar</tittle>
+            <section class="registrar__caja">
+                <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
+                <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
+                <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
+            </section>
+            <section class="registrar__boton">
+                <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
+                <p>o</p>
+                <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
+            </section>
+        </form>
+        <!-- Scripts añadidos -->
+        <script src="/perfil.394f930b.js"></script>
+        <script src="/perfil.a8b2b454.js"></script>
+        <script src="/perfil.2637e506.js"></script>
+    <script src="/perfil.73755eb3.js"></script></body>
 </html>
- <!-- npm run start -->
- <!-- npx parcel src/index.html -->

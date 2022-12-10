@@ -1,0 +1,39 @@
+// establece las propiedades del filtro que tendrán todos los listados, comienza definiendose el contenedor principal
+.cuerpo__filtro
+    display : flex
+    justify-content : center
+    align-items : center
+    padding-top: 3.2rem
+    //establece las propiedades de la caja del filtro, que funciona como input
+    &__caja
+        padding-left : 1em
+        height : 3.3rem
+        width :20rem
+        font-size : $xs
+        outline : none
+    // establece las propiedades del botón que permitirá realizar la búsqueda tras introducir un texto en el input
+    &__boton
+        background-color : $color_primario
+        height : 3.3rem
+        width : 3.3rem
+        cursor : pointer
+        // establece las propiedades de la imágen del botón de la búsqueda
+        &__imagen
+            width : 1.7rem
+// establece las propiedades de la caja que emplea el tipo de filtro, que empieza por defecto como "Filtro" y cada
+// vez que se pulsa cambiaría de texto
+.cuerpo__filtro__boton--filtro
+    border : 1px solid black
+    color : $color_claro
+    font-size : $s
+    font-family : $fuente_inter
+    width : 8.5rem
+    border-top-left-radius : 5px
+    border-bottom-left-radius : 5px
+    display : flex
+    align-items: center
+    justify-content: center
+// establece las propiedades del contenedor de la caja de filtro
+.cuerpo__filtro__boton--buscador
+    border-top-right-radius : 5px
+    border-bottom-right-radius : 5px

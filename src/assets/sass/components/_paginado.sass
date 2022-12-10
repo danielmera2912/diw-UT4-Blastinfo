@@ -1,0 +1,10 @@
+// se establece propiedades al páginado que tendrá en común todos los listados de la web, empieza con un contenedor
+.cuerpo__paginado
+    display : flex
+    justify-content : center
+    // se establece el valor de los botones, que se heredará de lo que está definido en el archivo extends.
+    &__boton
+        @extend %boton
+// se establece propiedades al botón que es el que está siendo activo mostrando su contenido
+.cuerpo__paginado__boton--actual
+    opacity : 25%

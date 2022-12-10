@@ -1,3 +1,4 @@
+// se establece los atributos para el contenedor global de los botones para establecer el modo oscuro y modo no oscuro.
 .container-btn-mode
   position: absolute
   top:25px
@@ -9,6 +10,7 @@
     top: 18px
     right : 7px
 
+// establece la posición de los elementos dentro del contenedor del botón
 .btn-mode
   display: inline-block
   width: 35px
@@ -18,21 +20,25 @@
   @media (max-width: 1900px) and (min-width: 1500px)
     width: 26px
 
+// establece propiedades generales a los íconos del botón
 .btn-mode i 
   display: block
   font-size: 17px
   text-align: center
   line-height: 30px
 
+//establece propiedades al botón que quita el modo oscuro
 .btn-mode.sol
   border-top-left-radius: 20px
   border-bottom-left-radius: 20px
   border-right: 1px solid transparent
-
+  
+//establece propiedades al botón que añade el modo oscuro
 .btn-mode.luna
   border-top-right-radius: 20px
   border-bottom-right-radius: 20px
 
+//establece propiedades cuando uno de los dos botones activa sus funciones, es decir, modo oscuro o claro
 .active
   background-color: $color_secundario_oscuro
   color: $color_claro !important
