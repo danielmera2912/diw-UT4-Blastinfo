@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portada / BlastInfo</title>
-    <link rel="stylesheet" href="assets/sass/main.sass">
-    <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
-    <link  rel="icon"  href="assets/images/favicon.png" type="image/png" />
-</head>
-<body class="pagina">
-    <!-- Botón modo oscuro -->
-    <section class="cuerpo__modoOscuro">
-        <div class="container-btn-mode">
-            <div id="id-sol" class="btn-mode sol active">
-               <i class="fas fa-sun"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portada / BlastInfo</title>
+        <link rel="stylesheet" href="assets/sass/main.sass">
+        <script src="https://kit.fontawesome.com/c125938a79.js" crossorigin="anonymous"></script>
+        <link  rel="icon"  href="assets/images/favicon.png" type="image/png" />
+        <!-- Ejemplo de como se añade css interno -->
+        <style type="text/css">
+            .cuerpo__movimientos{
+                width: 3.375rem;
+            }
+        </style>
+    </head>
+    <body class="pagina">
+        <!-- Botón modo oscuro -->
+        <section class="cuerpo__modoOscuro">
+            <div class="container-btn-mode">
+                <div id="id-sol" class="btn-mode sol active">
+                <i class="fas fa-sun"></i>
+                </div>
+                <div id="id-luna" class="btn-mode luna">
+                <i class="fas fa-moon"></i>
+                </div>
             </div>
-            <div id="id-luna" class="btn-mode luna">
-               <i class="fas fa-moon"></i>
-            </div>
-         </div>
-    </section>
-    <!-- Cabecera -->
-    <header class="encabezado encabezado--portada">
-        <nav>
-            <ul class="encabezado__lista">
-                <li><a href="buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
-                <li><a href="buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
-                <li><a href="buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-    <!-- Cuerpo -->
-    <main class="cuerpo cuerpo--fondo">
-        <!-- Logo -->
-        <img class="cuerpo__logo" src="assets/images/logo.svg">
-        <!-- Título -->
-        <h1 class="cuerpo__titulo">Blastinfo</h1>
-        <!-- Subtítulo -->
-        <h2 class="cuerpo__subtitulo">Busca a tus Pokémon favoritos</h2>
-        <!-- Buscador -->
-        <form class="cuerpo__buscador" action="https://www.wikidex.net/wiki/Blastoise">
-            <input class="cuerpo__buscador__caja" type="text" placeholder="Buscar..."> 
-            <button class="cuerpo__buscador__boton"><img class="cuerpo__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
-        </form>
+        </section>
+        <!-- Cabecera -->
+        <header class="encabezado encabezado--portada">
+            <nav class="encabezado__navegador">
+                <ul class="encabezado__lista">
+                    <li><a href="buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
+                    <li><a href="buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
+                    <li><a href="buscador_habilidad.html" class="encabezado__lista__enlace">Habilidades</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <!-- Cuerpo -->
+        <main class="cuerpo cuerpo--fondo">
+            <!-- Logo -->
+            <img class="cuerpo__logo" src="assets/images/logo.svg">
+            <!-- Título -->
+            <!-- Ejemplo de CSS modo inline -->
+            <h1 class="cuerpo__titulo" style="color:#0E6DCF;">Blastinfo</h1>
+            <!-- Subtítulo -->
+            <h2 class="cuerpo__subtitulo">Busca a tus Pokémon favoritos</h2>
+            <!-- Buscador -->
+            <form class="cuerpo__buscador" action="https://www.wikidex.net/wiki/Blastoise">
+                <input class="cuerpo__buscador__caja" type="text" placeholder="Buscar..."> 
+                <button class="cuerpo__buscador__boton"><img class="cuerpo__buscador__boton__imagen" src="assets/images/icons/search-3-48.png"></button>
+            </form>
 
-    </main>
-    <!-- Pie -->
-    <footer class="pie">
-        <ul class="pie__seccion pie__seccion--redes">
-            <li>
-                <a class="pie__seccion__redes" href="pagina404.html"><img  src="assets/images/Redes/twitter-5-48.png"></a>
-            </li>
-            <li>
-                <a class="pie__seccion__redes" href="pagina404.html"><img src="assets/images/Redes/facebook-5-48.png"></a>
-                
-            </li>
-            <li>
-                <a class="pie__seccion__redes" href="pagina404.html"><img src="assets/images/Redes/instagram-48.png"></a>
-            </li>
-        </ul>
-        <section class="pie__acceder">
-            <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
-        </section>
-        <section class="pie__contacto">
-            <p class="leader"> <a href="contacto.html" class="pie__contacto__enlace">Contacto</a></p>
-        </section>
-    </footer>
-    <!-- Fondo de desplegables -->
-    <div class="fondo"></div>
-    <!-- Desplegable de acceder al Perfil -->
-    <div class="perfil">
-        <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
-        <tittle class="perfil__titulo">Perfil</tittle>
-        <section class="perfil__avatar">
-            <img class="perfil__avatar__imagen" src="assets/images/icons/avatar.png">
-        </section>
-        <section class="perfil__boton">
-            <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
-        </section>
-    </div>
-    <!-- Desplegable de iniciar sesión -->
-    <form class="iniciar_sesion">
-        <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
-        <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
-        <section class="iniciar_sesion__caja">
-            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
-            <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
-        </section>
-        <section class="iniciar_sesion__boton">
-            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
-            <p>o</p>
-            <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
-        </section>
-    </form>
-    <!-- Desplegable de registrar cuenta-->
-    <form class="registrar">
-        <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
-        <tittle class="registrar__titulo">Registrar</tittle>
-        <section class="registrar__caja">
-            <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
-            <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
-            <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
-        </section>
-        <section class="registrar__boton">
-            <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
-            <p>o</p>
-            <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
-        </section>
-    </form>
-    <!-- Scripts añadidos -->
-    <script src="assets/js/iniciar.js"></script>
-    <script src="assets/js/filtro.js"></script>
-    <script src="assets/js/oscuro.js"></script>
-</body>
-<!-- Ejemplo de como se añade css interno -->
-<style type="text/css">
-    .cuerpo__movimientos{
-        width: 3.375rem;
-    }
-</style>
+        </main>
+        <!-- Pie -->
+        <footer class="pie">
+            <ul class="pie__seccion pie__seccion--redes">
+                <li>
+                    <a class="pie__seccion__redes" href="pagina404.html"><img  src="assets/images/Redes/twitter-5-48.png"></a>
+                </li>
+                <li>
+                    <a class="pie__seccion__redes" href="pagina404.html"><img src="assets/images/Redes/facebook-5-48.png"></a>
+                    
+                </li>
+                <li>
+                    <a class="pie__seccion__redes" href="pagina404.html"><img src="assets/images/Redes/instagram-48.png"></a>
+                </li>
+            </ul>
+            <section class="pie__acceder">
+                <p class="leader"> <a href="#" class="pie__acceder__enlace">Cuenta de Usuario</a></p>
+            </section>
+            <section class="pie__contacto">
+                <p class="leader"> <a href="contacto.html" class="pie__contacto__enlace">Contacto</a></p>
+            </section>
+        </footer>
+        <!-- Fondo de desplegables -->
+        <div class="fondo"></div>
+        <!-- Desplegable de acceder al Perfil -->
+        <div class="perfil">
+            <a href="#" ><img class="perfil__cerrar" src="assets/images/icons/cerrar.svg"></a>
+            <tittle class="perfil__titulo">Perfil</tittle>
+            <section class="perfil__avatar">
+                <img class="perfil__avatar__imagen" src="assets/images/icons/avatar.png">
+            </section>
+            <section class="perfil__boton">
+                <a href="perfil.html"><button class="perfil__boton__opcion">Acceder al perfil</button></a>
+            </section>
+        </div>
+        <!-- Desplegable de iniciar sesión -->
+        <form class="iniciar_sesion">
+            <a href="#" ><img class="iniciar_sesion__cerrar" src="assets/images/icons/cerrar.svg"></a>
+            <tittle class="iniciar_sesion__titulo">Iniciar sesión</tittle>
+            <section class="iniciar_sesion__caja">
+                <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Usuario..."> 
+                <input class="iniciar_sesion__caja__elemento" type="text" placeholder="Contraseña..."> 
+            </section>
+            <section class="iniciar_sesion__boton">
+                <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--entrar">Entrar</button>
+                <p>o</p>
+                <button class="iniciar_sesion__boton__opcion iniciar_sesion__boton__opcion--registrar">Regístrate</button>
+            </section>
+        </form>
+        <!-- Desplegable de registrar cuenta-->
+        <form class="registrar">
+            <a href="#" ><img class="registrar__cerrar" src="assets/images/icons/cerrar.svg"></a>
+            <tittle class="registrar__titulo">Registrar</tittle>
+            <section class="registrar__caja">
+                <input class="registrar__caja__elemento" type="text" placeholder="Usuario...">
+                <input class="registrar__caja__elemento" type="text" placeholder="Correo electrónico..."> 
+                <input class="registrar__caja__elemento" type="text" placeholder="Contraseña..."> 
+            </section>
+            <section class="registrar__boton">
+                <button class="registrar__boton__opcion registrar__boton__opcion--registrar">Registrar</button>
+                <p>o</p>
+                <button class="registrar__boton__opcion registrar__boton__opcion--iniciar">Identíficate aquí</button>
+            </section>
+        </form>
+        <!-- Scripts añadidos -->
+        <script src="assets/js/iniciar.js"></script>
+        <script src="assets/js/filtro.js"></script>
+        <script src="assets/js/oscuro.js"></script>
+    </body>
 </html>

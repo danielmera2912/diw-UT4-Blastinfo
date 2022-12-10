@@ -1,14 +1,18 @@
 // se establece los atributos para el contenedor global de los botones para establecer el modo oscuro y modo no oscuro.
 .container-btn-mode
   position: absolute
-  top:25px
+  bottom:10%
   right: 8px
   cursor: pointer
   z-index: 2
   font-size:0
+  // se define cambios en sus características según la resolución de la pantalla
   @media (max-width: 1900px) and (min-width: 1500px)
-    top: 18px
     right : 7px
+  @media (max-width: 720px)
+    right : 7px
+  @media (max-width: 420px)
+    bottom: 8.2%
 
 // establece la posición de los elementos dentro del contenedor del botón
 .btn-mode
@@ -17,8 +21,10 @@
   height: 30px
   border:2px solid $color_oscuro
   transition: background-color .5s
+  // se define cambios en sus características según la resolución de la pantalla
   @media (max-width: 1900px) and (min-width: 1500px)
     width: 26px
+
 
 // establece propiedades generales a los íconos del botón
 .btn-mode i 
@@ -26,17 +32,29 @@
   font-size: 17px
   text-align: center
   line-height: 30px
+  // se define cambios en sus características según la resolución de la pantalla
+  @media (max-width: 720px)
+    height : 10px
+    font-size : 13px
 
 //establece propiedades al botón que quita el modo oscuro
 .btn-mode.sol
   border-top-left-radius: 20px
   border-bottom-left-radius: 20px
   border-right: 1px solid transparent
+  // se define cambios en sus características según la resolución de la pantalla
+  @media (max-width: 720px)
+    width : 25px
+    height : 25px
   
 //establece propiedades al botón que añade el modo oscuro
 .btn-mode.luna
   border-top-right-radius: 20px
   border-bottom-right-radius: 20px
+  // se define cambios en sus características según la resolución de la pantalla
+  @media (max-width: 720px)
+    width : 25px
+    height : 25px
 
 //establece propiedades cuando uno de los dos botones activa sus funciones, es decir, modo oscuro o claro
 .active

@@ -43,3 +43,17 @@
         border : 1px solid $color_oscuro
         border-radius : 5px
         margin : auto
+
+    // se define cambios en sus características según la resolución de la pantalla
+    @media (max-width: 1200px)
+        &__titulo
+            font-size : $l
+            padding: 2rem
+        &__datos
+            &__nombre
+                width : 99%
+                margin-bottom : 1rem
+            &__correo
+                width: 99%
+        &__enviar
+            margin-bottom : 2rem

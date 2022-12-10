@@ -12,7 +12,7 @@
     </head>
     <body class="pagina">
         <!-- Botón modo oscuro -->
-        <section class="cuerpo__modoOscuro">
+        <!-- <section class="cuerpo__modoOscuro">
             <div class="container-btn-mode">
                 <div id="id-sol" class="btn-mode sol active">
                 <i class="fas fa-sun"></i>
@@ -21,13 +21,13 @@
                 <i class="fas fa-moon"></i>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Cabecera -->
-        <header class="encabezado encabezado--portada">
+        <header class="encabezado encabezado--normal">
             <a href="index.html">
                 <img class="encabezado__lista__logo" src="assets/images/logo.svg">
             </a>
-            <nav>
+            <nav class="encabezado__navegador">
                 <ul class="encabezado__lista">
                     <li><a href="buscador_pokemon.html" class="encabezado__lista__enlace">Pokémon</a></li>
                     <li><a href="buscador_movimiento.html" class="encabezado__lista__enlace">Movimientos</a></li>
@@ -47,6 +47,10 @@
             <!-- Avatar -->
             <section class="cuerpo--perfil__avatar">
                 <img class="cuerpo--perfil__avatar__imagen" src="assets/images/icons/avatar.png">
+                <!-- Botón de Editar perfil -->
+                <!-- Este botón no implementa ningún contenido de HTML en la versión final, en JS se convertirían las cajas
+                de respuestas en inputs para que el usuario sobrescriba la nueva información, y dicho botón de "Editar perfil"
+                se transformaría en "Guardar cambios" -->
                 <a href="#" class="cuerpo--perfil__avatar__editar">
                     Editar Perfil
                 </a>

@@ -11,6 +11,9 @@
         width :20rem
         font-size : $xs
         outline : none
+        // se define cambios en sus características según la resolución de la pantalla
+        @media (max-width: 700px)
+            width : 10rem
     // establece las propiedades del botón que permitirá realizar la búsqueda tras introducir un texto en el input
     &__boton
         background-color : $color_primario

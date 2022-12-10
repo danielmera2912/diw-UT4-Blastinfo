@@ -16,9 +16,12 @@
         align-items : center
         justify-content : center
         // se define cambios en sus características según la resolución de la pantalla
-        @media (max-width: 1900px) and (min-width: 1500px)
+        @media (max-width: 1900px)
             padding: 0.25rem
-            height : 8rem
+        @media (max-width: 760px)
+            font-size : $s  
+        @media (max-width: 425px)
+            width : 22rem
         // se establece propiedades al nombre de cada objeto que representa una habilidad
         &__nombre
             width : 78%
@@ -26,7 +29,7 @@
             padding : 3rem
 
             // se define cambios en sus características según la resolución de la pantalla
-            @media (max-width: 1900px) and (min-width: 1500px)
+            @media (max-width: 1900px)
                 padding: 1.5rem
         // se establece propiedades a los datos adiccionales de cada habilidad
         &__datos  
@@ -38,7 +41,7 @@
             padding : 2.5rem
 
             // se define cambios en sus características según la resolución de la pantalla
-            @media (max-width: 1900px) and (min-width: 1500px)
+            @media (max-width: 1900px) 
                 padding: 2rem
             // se establece propiedades a la imágen que aparece de los datos de las habilidades, en este caso es la generación
             &__imagen
